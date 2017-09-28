@@ -1,0 +1,20 @@
+.flt--l{
+  float: left;
+}
+.flt--r{
+  float: right;
+}
+.clr{
+  clear: both;
+}
+.clr--l{
+  clear: left;
+}
+.clr--r{
+  clear: right;
+}
+.box::after{
+  clear: both;
+  content: "";
+  display: table;
+}
