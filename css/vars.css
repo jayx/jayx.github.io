@@ -1,0 +1,9 @@
+:root{
+  --space-gutter: 20px;
+  --theme-bg: #eee;
+  --theme-color: #3a3a3a;
+  --theme-bg-light: #fff;
+  --theme-color-light: #6f6f6f;
+  --theme-bg-dark: #3a3a3a;
+  --theme-color-dark: #f3f3f3;
+}
