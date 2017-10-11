@@ -1,3 +1,4 @@
+/* Floats */
 .flt--l{
   float: left;
 }
@@ -17,4 +18,11 @@
   clear: both;
   content: "";
   display: table;
+}
+/* Spacing */
+.space--y{
+
+}
+.space--y + .space--y{
+  margin-top: var(--space-gutter);
 }

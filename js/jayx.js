@@ -1,14 +1,16 @@
 // Load navigation from one location
 $(document).ready(function(){
-  $('#main-nav').load('nav.html #nav-main');
+  $('.site-header').load('partials/site-header.html .heading');
+  $('#main-nav').load('partials/nav.html #nav-main');
 });
 // Adjust header
+var headerHeight = $('header').height() / 2;
 $(document).scroll(function(e){
   var fromTop = $(window).scrollTop();
   console.log(fromTop);
-  if (fromTop > 200) {
-    $('header.box').addClass('zoom--out');
+  if (fromTop > headerHeight) {
+    $('html').addClass('zoom--out');
   } else {
-    $('header.box').removeClass('zoom--out');
+    $('html').removeClass('zoom--out');
   }
 });
