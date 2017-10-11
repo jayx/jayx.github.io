@@ -1,0 +1,42 @@
+.site-header{
+  background: white;
+  height: 140px;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transition: height 360ms;
+  width: 100%;
+}
+.heading{
+  height: 100%;
+  position: relative;
+}
+[class^="heading__clone"]{
+  align-items: center;
+  display: flex;
+  height: calc(100% - (var(--space-gutter) * 2));
+  margin: var(--space-gutter);
+  position: absolute;
+  transition: top 360ms;
+  width: 100%;
+}
+.heading__clone--primary{
+  top: 0;
+}
+.heading__clone--secondary{
+  top: 100%;
+}
+.site-header [class^="heading--"]{
+  margin: 0;
+}
+/* Header zoomed-out states */
+.zoom--out .site-header{
+  height: 80px;
+}
+.zoom--out .heading__clone--secondary{
+  top: 0;
+}
+.zoom--out .heading__clone--primary{
+  top: -100px;
+}

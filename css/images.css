@@ -1,22 +1,18 @@
 .avatar{
   border: 3px solid var(--theme-bg);
   border-radius: 50%;
-  height: 10vw;
-  max-height: 100px;
-  max-width: 100px;
+  height: 100px;
+  margin-right: var(--space-gutter);
   overflow: hidden;
-  width: 10vw;
+  width: 100px;
 }
 .avatar__link{
   display: block;
-  max-height: 100%;
-  max-width: 100%;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 .avatar__image{
   object-fit: cover;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
