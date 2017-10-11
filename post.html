@@ -6,14 +6,17 @@
 <link rel="stylesheet" type="text/css" href="css/jayx.css"/>
 </head>
 <body>
-  <header>
-    <h1 class="heading--1">jayx.co.za - just another vanilla website</h1>
-  </header>
-  <main role="main">
-    <h1 class="heading--1">About</h1>
-    <p>This is my playground/sandbox/portfolio. I have been around frontend web development <a href="https://www.linkedin.com/in/jayxm/">for a while</a> and <a href="http://justcss.co.za">blog (very) infrequently</a> about CSS and such.</p>
-    <div id="disqus_thread"></div>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <header class="site-header box"></header>
+  <main role="main" class="site-main">
+    <aside id="main-nav"></aside>
+    <section class="site-main__content">
+      <h1 class="heading--1">About</h1>
+      <p>This is my playground/sandbox/portfolio. I have been around frontend web development <a href="https://www.linkedin.com/in/jayxm/">for a while</a> and <a href="http://justcss.co.za">blog (very) infrequently</a> about CSS and such.</p>
+    </section>
+    <section class="site-main__comments">
+      <div id="disqus_thread"></div>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
   </main>
   <footer>
     <p>Copyright &copy; 2017 - jayx | <a href="http://designsignature.co.za">designsignature</a></p>
@@ -35,5 +38,7 @@
   (d.head || d.body).appendChild(s);
   })();
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jayx.js"></script>
 </body>
 </html>
