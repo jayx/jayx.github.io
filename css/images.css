@@ -2,9 +2,15 @@
   border: 3px solid var(--theme-bg);
   border-radius: 50%;
   height: 100px;
-  margin-right: var(--space-gutter);
+  left: var(--space-gutter);
   overflow: hidden;
+  position: absolute;
+  top: calc(50% - 52px);
+  transition: transform 300ms;
   width: 100px;
+}
+.zoom--out .avatar{
+  transform: scale(0.5) translateX(-200%);
 }
 .avatar__link{
   display: block;

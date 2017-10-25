@@ -15,19 +15,19 @@ body{
   font-weight: 600;
 }
 .heading--1{
-  font-size: 3rem;
+  font-size: 3em;
   line-height: 1.05em;
 }
 .heading--2{
-  font-size: 2.25rem;
+  font-size: 2.25em;
   line-height: 1.25em;
 }
 .heading--3{
-  font-size: 1.75rem;
+  font-size: 1.75em;
   line-height: 1.25em;
 }
 .heading--4{
-  font-size: 1.125rem;
+  font-size: 1.125em;
   line-height: 1.225em;
 }
 .content__para{
