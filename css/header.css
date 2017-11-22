@@ -10,16 +10,18 @@
 }
 .heading{
   height: 100%;
+  margin: 0 auto;
   position: relative;
+  width: 80%;
 }
 .heading__group{
-  padding: 40px 0 0 130px;
+  padding: 34px 0 0 130px;
   transition: padding 300ms;
 }
 .zoom--out .heading__group{
   font-size: 0.8rem;
   padding-left: 20px;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 .site-header [class^="heading--"]{
   margin: 0;

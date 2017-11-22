@@ -8,6 +8,9 @@ body{
   font-weight: 200;
   margin-bottom: 1em;
 }
+* + [class^="heading--"]{
+  margin-top: 1em;
+}
 [class*="--medium"]{
   font-weight: 400;
 }
@@ -35,4 +38,13 @@ body{
 }
 .content__link{
   color: var(--colour-blue-calm);
+}
+p + p{
+  margin-top: 1.4em;
+}
+b,strong{
+  font-weight: bold;
+}
+em{
+  font-style: italic;
 }
