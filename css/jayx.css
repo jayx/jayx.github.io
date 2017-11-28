@@ -2,7 +2,7 @@
 @import "reset.css";
 @import "base.css";
 @import "images.css";
-@import "typography.css";
+@import "../blox/typography.css";
 @import "header.css";
 @import "content.css";
 @import "nav.css";
