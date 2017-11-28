@@ -1,10 +1,10 @@
 .site-main{
-  margin: 140px 0 0;
   padding: var(--space-gutter) 0;
 }
+/*
 [class$="__content"]{
 
 }
 .site-main__content{
   margin-left: 220px;
-}
+}*/

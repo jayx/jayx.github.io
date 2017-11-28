@@ -1,14 +1,22 @@
 :root{
+  /* Colour variables */
+  --theme-colour-black: #000000;
+  --theme-colour-slate: #333333;
+  --theme-colour-chalkboard: #6f6f6f;
+  --theme-colour-grey: #b4b4b4;
+  --theme-colour-lightgrey: #dadada;
+  --theme-colour-dust: #eeeeee;
+  --theme-colour-darkblue: #005f6b;
+  --theme-colour-deepblue: #008c9e;
+  --theme-colour-calmblue: #00b4cc;
+  --theme-colour-skyblue: #00dffc;
   --space-gutter: 24px;
-  --theme-bg: #eee;
-  --theme-color: #3a3a3a;
-  --theme-bg-light: #fff;
-  --theme-color-light: #6f6f6f;
-  --theme-bg-dark: #3a3a3a;
-  --theme-color-dark: #f3f3f3;
-  --colour-slate: #343838;
-  --colour-blue-dark: #005f6b;
-  --colour-blue-deep: #008c9e;
-  --colour-blue-calm: #00b4cc;
-  --colour-blue-light: #00dffc;
+  --space-tiny: 4px;
+  --space-smallest: 8px;
+  --space-smaller: 12px;
+  --space-smallish: 16px;
+  --space-medium: 24px;
+  --space-largish: 32px;
+  --space-larger: 48px;
+  --space-largest: 64px;
 }
