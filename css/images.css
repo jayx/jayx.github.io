@@ -2,7 +2,7 @@
   border: 3px solid var(--theme-bg);
   border-radius: 50%;
   height: 100px;
-  left: var(--space-gutter);
+  left: calc(var(--space-gutter)/2);
   overflow: hidden;
   position: absolute;
   top: calc(50% - 52px);
@@ -10,7 +10,7 @@
   width: 100px;
 }
 .zoom--out .avatar{
-  transform: scale(0.5) translateX(-200%);
+  transform: scale(0.5) translateX(-150%);
 }
 .avatar__link{
   display: block;
