@@ -1,0 +1,31 @@
+/*
+* Floated grids are row based
+* Margin removed on last element
+* Width calculated as follows: ((((100% - [gutter-width * gutter-count]) / full-count) * column-count) + [gutter-width * [column-count - 1]])
+*/
+[class^="grid--"]::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+[class^="grid--float"] > *{
+  float: left;
+  margin-right: 24px;
+}
+[class^="grid--float"] > *:last-of-type{margin-right: 0}
+[class^="grid--float"] .full{width: 100%}
+[class^="grid--float"] .half{width: calc((100% - 24px) / 2)}
+[class^="grid--float"] .third{width: calc((100% - 48px) / 3)}
+[class^="grid--float"] .third-third{width: calc((((100% - 48px) / 3) * 2) + 24px)}
+[class^="grid--float"] .quart{width: calc((100% - 72px) / 4)}
+[class^="grid--float"] .quart-quart{width: calc((((100% - 72px) / 4) * 2) + 24px)}
+[class^="grid--float"] .quart-quart-quart{width: calc((((100% - 72px) / 4) * 3) + 48px)}
+@media (max-width: 1023px){
+  [class^="grid--"][class*="--responsive"] > *{
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  [class^="grid--"][class*="--responsive"] > *:last-of-type{
+    margin-bottom: 0;
+  }
+}
