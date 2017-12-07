@@ -1,0 +1,79 @@
+/*
+Spacing scale:
+--tiny			4px
+--smallest	8px
+--smaller		12px
+--smallish	16px
+--medium		24px
+--largish		32px
+--larger		48px
+--largest		64px
+
+Dimension:
+.buffered   margin all sides
+.layered    margin between boxes vertically
+.spaced     margin between boxes horizontally
+.boxed      padding all sides
+.stacked    padding vertically
+.shelved    padding horisontally
+*/
+
+.buffered--tiny{margin: 4px}
+.buffered--smallest{margin: 8px}
+.buffered--smaller{margin: 12px}
+.buffered--smallish{margin: 16px}
+.buffered--medium{margin: 24px}
+.buffered--largish{margin: 32px}
+.buffered--larger{margin: 48px}
+.buffered--largest{margin: 64px}
+
+.layered--tiny{margin-top: 4px}
+.layered--smallest{margin-top: 8px}
+.layered--smaller{margin-top: 12px}
+.layered--smallish{margin-top: 16px}
+.layered--medium{margin-top: 24px}
+.layered--largish{margin-top: 32px}
+.layered--larger{margin-top: 48px}
+.layered--largest{margin-top: 64px}
+
+.spaced--tiny{margin-left: 4px}
+.spaced--smallest{margin-left: 8px}
+.spaced--smaller{margin-left: 12px}
+.spaced--smallish{margin-left: 16px}
+.spaced--medium{margin-left: 24px}
+.spaced--largish{margin-left: 32px}
+.spaced--larger{margin-left: 48px}
+.spaced--largest{margin-left: 64px}
+
+/* Getting rid of first and last item margins */
+.box-group [class^="buffered--"]:first-child{margin-top: 0}
+.box-group [class^="buffered--"]:last-child{margin-bottom: 0}
+.box-group [class^="layered--"]:first-child{margin-top: 0}
+.box-group [class^="spaced--"]:first-child{margin-left: 0}
+
+.boxed--tiny{padding: 4px}
+.boxed--smallest{padding: 8px}
+.boxed--smaller{padding: 12px}
+.boxed--smallish{padding: 16px}
+.boxed--medium{padding: 24px}
+.boxed--largish{padding: 32px}
+.boxed--larger{padding: 48px}
+.boxed--largest{padding: 64px}
+
+.stacked--tiny{padding-bottom: 4px; padding-top: 4px}
+.stacked--smallest{padding-bottom: 8px; padding-top: 8px}
+.stacked--smaller{padding-bottom: 12px; padding-top: 12px}
+.stacked--smallish{padding-bottom: 16px; padding-top: 16px}
+.stacked--medium{padding-bottom: 24px; padding-top: 24px}
+.stacked--largish{padding-bottom: 32px; padding-top: 32px}
+.stacked--larger{padding-bottom: 48px; padding-top: 48px}
+.stacked--largest{padding-bottom: 64px; padding-top: 64px}
+
+.shelved--tiny{padding-left: 4px; padding-right: 4px}
+.shelved--smallest{padding-left: 8px; padding-right: 8px}
+.shelved--smaller{padding-left: 12px; padding-right: 12px}
+.shelved--smallish{padding-left: 16px; padding-right: 16px}
+.shelved--medium{padding-left: 24px; padding-right: 24px}
+.shelved--largish{padding-left: 32px; padding-right: 32px}
+.shelved--larger{padding-left: 48px; padding-right: 48px}
+.shelved--largest{padding-left: 64px; padding-right: 64px}

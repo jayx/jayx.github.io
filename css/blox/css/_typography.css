@@ -1,0 +1,42 @@
+body{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+}
+[class^="heading--"]{
+  font-weight: 200;
+  margin: 1.4em 0 1em;
+}
+[class*="--medium"]{
+  font-weight: 400;
+}
+[class*="--heavy"]{
+  font-weight: 600;
+}
+[class^="heading--1"]{
+  font-size: 36px;
+}
+[class^="heading--2"]{
+  font-size: 28px;
+}
+[class^="heading--3"]{
+  font-size: 24px;
+}
+[class^="heading--4"]{
+  font-size: 20px;
+}
+.content__para{
+  line-height: 1.4em;
+}
+.content__link{
+  text-decoration: underline;
+}
+p + p{
+  margin-top: 1.4em;
+}
+b,strong{
+  font-weight: bold;
+}
+em{
+  font-style: italic;
+}
