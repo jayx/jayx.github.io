@@ -1,16 +1,16 @@
 .avatar{
   border: 3px solid var(--theme-bg);
   border-radius: 50%;
-  height: 100px;
-  left: calc(var(--space-gutter)/2);
+  height: 64px;
+  left: 0;
   overflow: hidden;
   position: absolute;
-  top: calc(50% - 52px);
+  top: calc(50% - 32px);
   transition: transform 300ms;
-  width: 100px;
+  width: 64px;
 }
 .zoom--out .avatar{
-  transform: scale(0.5) translateX(-150%);
+  transform: scale(0.75) translateX(-96px);
 }
 .avatar__link{
   display: block;
