@@ -7,7 +7,7 @@ $(document).ready(function(){
 var headerHeight = $('header').height() / 2;
 $(document).scroll(function(e){
   var fromTop = $(window).scrollTop();
-  console.log(fromTop);
+  // console.log(fromTop);
   if (fromTop > headerHeight) {
     $('html').addClass('zoom--out');
   } else {
