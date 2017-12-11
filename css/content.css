@@ -12,3 +12,6 @@
 .site-main__content > [class^="heading--"]:first-child{
   margin-top: 0;
 }
+.content__link{
+  color: var(--theme-colour-calmblue);
+}
