@@ -1,7 +1,10 @@
 .site-main{
+  box-sizing: border-box;
   margin: 0 auto;
   max-width: 960px;
-  padding-top: 144px;
+  padding-left: var(--space-smallish);
+  padding-right: var(--space-smallish);
+  padding-top: 92px;
   width: 100%;
 }
 .site-main__content{
@@ -14,4 +17,11 @@
 }
 .content__link{
   color: var(--theme-colour-calmblue);
+}
+@media (min-width: 821px){
+  .site-main{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 144px;
+  }
 }
