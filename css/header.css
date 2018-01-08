@@ -1,8 +1,8 @@
 .site-header{
   background: white;
-  height: 96px;
+  height: 68px;
   left: 0;
-  overflow: hidden;
+  padding: var(--space-tiny) var(--space-smallish) 0;
   position: fixed;
   top: 0;
   transition: height 360ms;
@@ -16,7 +16,9 @@
   width: 100%;
 }
 .heading__group{
-  padding-left: 80px;
+  padding-bottom: 8px;
+  padding-left: 56px;
+  padding-top: 8px;
   transition: padding 300ms;
 }
 .zoom--out .heading__group{
@@ -31,4 +33,15 @@
 /* Header zoomed-out states */
 .zoom--out .site-header{
   height: 64px;
+}
+@media (min-width: 821px){
+  .site-header{
+    height: 96px;
+    padding: 0;
+  }
+  .heading__group{
+    padding-bottom: 24px;
+    padding-left: 80px;
+    padding-top: 24px;
+  }
 }
