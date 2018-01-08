@@ -1,13 +1,13 @@
 .avatar{
   border: 3px solid var(--theme-bg);
   border-radius: 50%;
-  height: 64px;
+  height: 48px;
   left: 0;
   overflow: hidden;
   position: absolute;
-  top: calc(50% - 32px);
+  top: calc(50% - 28px);
   transition: transform 300ms;
-  width: 64px;
+  width: 48px;
 }
 .zoom--out .avatar{
   transform: scale(0.75) translateX(-96px);
@@ -21,4 +21,11 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+@media (min-width: 821px){
+  .avatar{
+    height: 64px;
+    width: 64px;
+    top: calc(50% - 32px);
+  }
 }
