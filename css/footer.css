@@ -1,7 +1,14 @@
 .site-footer{
   border-top: 1px solid var(--theme-colour-grey);
+  box-sizing: border-box;
   margin: 64px auto 0;
   max-width: 680px;
-  padding: 32px 0 64px;
+  padding: 32px var(--space-smallish) 64px;
   width: 100%;
+}
+@media (min-width: 821px){
+  .site-footer{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

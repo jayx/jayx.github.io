@@ -1,5 +1,6 @@
 .site-header{
   background: white;
+  box-sizing: border-box;
   height: 68px;
   left: 0;
   padding: var(--space-tiny) var(--space-smallish) 0;
