@@ -31,6 +31,9 @@ body{
 .content__link{
   text-decoration: underline;
 }
+.link--silent{
+  text-decoration: none;
+}
 p + p{
   margin-top: 1.4em;
 }

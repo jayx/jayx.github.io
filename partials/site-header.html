@@ -5,43 +5,53 @@
     </a>
   </figure>
   <section class="heading__group">
-    <h1 class="heading--3">jayx.github.io</h1>
+    <h1 class="heading--3"><a href="/" class="link--silent">jayx.github.io</a></h1>
     <h2 class="heading--6">just another vanilla website</h2>
   </section>
   <nav class="nav--main">
-    <span class="icon--menu-toggle" data-toggle-trigger="main-menu"></span>
-    <ul class="nav-main__list" data-toggle-target="main-menu">
-      <li class="nav-main__list-item">
-        <span class="icon--menu" data-toggle-trigger="about-menu"></span>
-        <ul class="nav-main__list" data-toggle-target="about-menu">
-          <li class="nav-main__list-item"><a href="/about/">About</a></li>
-          <li class="nav-main__list-item"><a href="#">Articles</a></li>
-          <li class="nav-main__list-item"><a href="#">Cirriculum Vitae</a></li>
-          <li class="nav-main__list-item"><a href="#">Sevices</a></li>
-          <li class="nav-main__list-item"><a href="#">Work</a></li>
-        </ul>
-      </li>
-      <li class="nav-main__list-item">
-        <span class="icon--menu-social" data-toggle-trigger="social-menu"></span>
-        <ul class="nav-main__list" data-toggle-target="social-menu">
-          <li class="nav-main__list-item"><a href="#">LinkedIn</a></li>
-          <li class="nav-main__list-item"><a href="#">StackOverflow</a></li>
-          <li class="nav-main__list-item"><a href="#">Codepen</a></li>
-          <li class="nav-main__list-item"><a href="#">GitHub</a></li>
-          <li class="nav-main__list-item"><a href="#">Facebook</a></li>
-          <li class="nav-main__list-item"><a href="#">Twitter</a></li>
-        </ul>
-      </li>
-      <li class="nav-main__list-item">
-        <span class="icon--menu-lib" data-toggle-trigger="lib-menu"></span>
-        <ul class="nav-main__list" data-toggle-target="lib-menu">
-          <li class="nav-main__list-item"><a href="#">Library</a></li>
-          <li class="nav-main__list-item"><a href="#">On GitHub</a></li>
-        </ul>
-      </li>
-      <!-- <li>
-        <a href="post.html">Blog</a>
-      </li> -->
-    </ul>
+    <span class="icon--menu-toggle nav--main__trigger" data-toggle-trigger="main-menu"></span>
+    <section class="nav--main__tabs" data-toggle-target="main-menu">
+      <ul class="tabs__nav">
+        <li class="tabs__nav-item">
+          <span class="icon--menu tabs__toggle" data-toggle-trigger="about-menu"></span>
+        </li>
+        <li class="tabs__nav-item">
+          <span class="icon--menu-social tabs__toggle" data-toggle-trigger="social-menu"></span>
+        </li>
+        <li class="tabs__nav-item">
+          <span class="icon--menu-lib tabs__toggle" data-toggle-trigger="lib-menu"></span>
+        </li>
+      </ul>
+      <ul class="tabs__panels">
+        <li class="tabs__panel-item" data-toggle-target="about-menu">
+          <ul class="nav-main__list">
+            <li class="nav-main__list-item"><a href="/about/" class="nav-main__link">About</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">Articles</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">Cirriculum Vitae</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">Sevices</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">Work</a></li>
+          </ul>
+        </li>
+        <li class="tabs__panel-item" data-toggle-target="social-menu">
+          <ul class="nav-main__list">
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">LinkedIn</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">StackOverflow</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">Codepen</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">GitHub</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">Facebook</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">Twitter</a></li>
+          </ul>
+        </li>
+        <li class="tabs__panel-item" data-toggle-target="lib-menu">
+          <ul class="nav-main__list">
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">Library</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__link">On GitHub</a></li>
+          </ul>
+        </li>
+        <!-- <li>
+          <a href="post.html">Blog</a>
+        </li> -->
+      </ul>
+    </section>
   </nav>
 </div>
