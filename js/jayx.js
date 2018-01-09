@@ -1,7 +1,7 @@
 // Load navigation from one location
 $(document).ready(function(){
-  $('.site-header').load('partials/site-header.html .heading');
-  $('#main-nav').load('partials/nav.html #nav-main');
+  $('.site-header').load('/partials/site-header.html .heading');
+  $('.site-footer').load('/partials/site-footer.html .content__para');
 });
 // Adjust header
 var headerHeight = $('header').height() / 2;
