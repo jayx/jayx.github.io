@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu" fill="#333333">
+            <rect id="Rectangle-2" x="8" y="23" width="80" height="6"></rect>
+            <rect id="Rectangle-2" x="8" y="45" width="80" height="6"></rect>
+            <rect id="Rectangle-2" x="8" y="67" width="80" height="6"></rect>
+        </g>
+    </g>
+</svg>

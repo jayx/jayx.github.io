@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>mobi menu colour</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobi-menu-colour">
+            <rect id="Rectangle-5" stroke="#00B4CC" x="8.5" y="8.5" width="79" height="79"></rect>
+            <g id="Group" transform="translate(16.000000, 28.000000)" fill="#00B4CC">
+                <rect id="Rectangle-2" x="0" y="0" width="64" height="4.8"></rect>
+                <rect id="Rectangle-2" x="0" y="17.6" width="64" height="4.8"></rect>
+                <rect id="Rectangle-2" x="0" y="35.2" width="64" height="4.8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
