@@ -2,6 +2,8 @@
 
 }
 .nav--main{
-  height: 100%;
-  width: 200px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: calc(100% - 32px);
 }
