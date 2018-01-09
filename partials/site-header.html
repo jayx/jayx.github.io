@@ -8,14 +8,37 @@
     <h1 class="heading--3">jayx.github.io</h1>
     <h2 class="heading--6">just another vanilla website</h2>
   </section>
-  <nav class="nav--main flt--l">
-    <ul>
-      <li>
-        <a href="about.html">About</a>
+  <nav class="nav--main">
+    <span class="icon--menu-toggle" data-toggle-trigger="main-menu"></span>
+    <ul class="nav-main__list" data-toggle-target="main-menu">
+      <li class="nav-main__list-item">
+        <span class="icon--menu" data-toggle-trigger="about-menu"></span>
+        <ul class="nav-main__list" data-toggle-target="about-menu">
+          <li class="nav-main__list-item"><a href="/about/">About</a></li>
+          <li class="nav-main__list-item"><a href="#">Articles</a></li>
+          <li class="nav-main__list-item"><a href="#">Cirriculum Vitae</a></li>
+          <li class="nav-main__list-item"><a href="#">Sevices</a></li>
+          <li class="nav-main__list-item"><a href="#">Work</a></li>
+        </ul>
       </li>
-      <!-- <li>
-        <a href="lib.html">Library</a>
-      </li> -->
+      <li class="nav-main__list-item">
+        <span class="icon--menu-social" data-toggle-trigger="social-menu"></span>
+        <ul class="nav-main__list" data-toggle-target="social-menu">
+          <li class="nav-main__list-item"><a href="#">LinkedIn</a></li>
+          <li class="nav-main__list-item"><a href="#">StackOverflow</a></li>
+          <li class="nav-main__list-item"><a href="#">Codepen</a></li>
+          <li class="nav-main__list-item"><a href="#">GitHub</a></li>
+          <li class="nav-main__list-item"><a href="#">Facebook</a></li>
+          <li class="nav-main__list-item"><a href="#">Twitter</a></li>
+        </ul>
+      </li>
+      <li class="nav-main__list-item">
+        <span class="icon--menu-lib" data-toggle-trigger="lib-menu"></span>
+        <ul class="nav-main__list" data-toggle-target="lib-menu">
+          <li class="nav-main__list-item"><a href="#">Library</a></li>
+          <li class="nav-main__list-item"><a href="#">On GitHub</a></li>
+        </ul>
+      </li>
       <!-- <li>
         <a href="post.html">Blog</a>
       </li> -->
