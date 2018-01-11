@@ -6,22 +6,71 @@
 <link rel="stylesheet" type="text/css" href="css/jayx.css?201801082227"/>
 </head>
 <body>
-  <header class="site-header box"></header>
+  <header class="site-header box">
+    <div class="heading">
+      <figure class="avatar">
+        <a href="/" class="avatar__link">
+          <img class="avatar__image" src="https://secure.gravatar.com/avatar/b1762fcc03b6c367fd95a3fa11430006?size=300">
+        </a>
+      </figure>
+      <section class="heading__group">
+        <h1 class="heading--3"><a href="/" class="link--silent">jayx.github.io</a></h1>
+        <h2 class="heading--6">just another vanilla website</h2>
+      </section>
+      <nav class="nav--main" data-toggle-group>
+        <span class="icon--menu-toggle nav--main__trigger" data-toggle-trigger="main-menu"></span>
+        <section class="nav--main__tabs" data-toggle-target="main-menu" data-tab-group>
+          <ul class="tabs__nav">
+            <li class="tabs__nav-item">
+              <span class="icon--menu tabs__toggle tab-is-open" data-tab-trigger="about-menu"></span>
+            </li>
+            <li class="tabs__nav-item">
+              <span class="icon--menu-social tabs__toggle" data-tab-trigger="social-menu"></span>
+            </li>
+            <li class="tabs__nav-item">
+              <span class="icon--menu-lib tabs__toggle" data-tab-trigger="lib-menu"></span>
+            </li>
+          </ul>
+          <ul class="tabs__panels">
+            <li class="tabs__panel-item tab-open" data-tab-target="about-menu">
+              <ul class="nav-main__list">
+                <li class="nav-main__list-item"><a href="/about/" class="nav-main__link">About</a></li>
+                <li class="nav-main__list-item"><a href="/articles/" class="nav-main__link">Articles</a></li>
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">Cirriculum Vitae</a></li>
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">Sevices</a></li>
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">Work</a></li>
+              </ul>
+            </li>
+            <li class="tabs__panel-item" data-tab-target="social-menu">
+              <ul class="nav-main__list">
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">LinkedIn</a></li>
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">StackOverflow</a></li>
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">Codepen</a></li>
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">GitHub</a></li>
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">Facebook</a></li>
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">Twitter</a></li>
+              </ul>
+            </li>
+            <li class="tabs__panel-item" data-tab-target="lib-menu">
+              <ul class="nav-main__list">
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">Library</a></li>
+                <li class="nav-main__list-item"><a href="#" class="nav-main__link">On GitHub</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+  </header>
   <main role="main" class="site-main">
     <section class="site-main__content">
       <h1 class="heading--1">Hello world - this is me</h1>
-      <p class="content__para">Firstly: this is an experiment - I wanted to build a static HTML website with Vanilla CSS (and a bit of jQuery) using Github pages.</p>
-      <p class="content__para">I have wanted to build my own component library for some time now - this sort of forces me to crack on with it, now that we're out in the open</p>
+      <p class="content__para">Firstly: this is an experiment - I wanted to build a static HTML website with Vanilla CSS (and a bit of jQuery) using Github pages ... I did.</p>
+      <p class="content__para">I have wanted to build my own component library for some time now - this sort of forces me to crack on with it, now that we're out in the open.</p>
       <p class="content__para">I wanted to build this with my own component library (I did ... sort of) using Git submodules (bad idea) which I will eventually use to update my ever-aging <a href="http://designsignature.co.za" class="content__link">portfotlio website</a> and use to rapidly prototype anything else I want to build as an experiment.</p>
       <p class="content__para">I have a few dozen unpublished <a href="http://justcss.co.za" class="content__link">blog posts</a> waiting to come out of draft ... one of these days.</p>
+      <p class="content__para">This site uses a bunch of things that is not very well supported in legacy browsers - stuff breaks ... <a href="https://www.mozilla.org/en-US/firefox/" class="content__link">update your browser</a>.</p>
       <p class="content__para">This is work in progress ... it will probably be that for the foreseeable future.</p>
-      <!-- Hipsum text to force scroll -->
-      <p class="content__para">Vegan vaporware marfa helvetica wolf. Swag chillwave salvia, banh mi adaptogen fingerstache next level tattooed organic pok pok cardigan. Try-hard selvage everyday carry etsy literally kombucha normcore distillery vegan YOLO. Sriracha schlitz 8-bit, readymade la croix pour-over normcore polaroid offal salvia deep v vexillologist narwhal. Mixtape freegan cloud bread palo santo master cleanse retro.</p>
-      <p class="content__para">Hella letterpress crucifix palo santo synth. Bitters copper mug yuccie leggings, next level synth forage knausgaard pork belly jianbing ennui kale chips blue bottle organic cray. Artisan kogi hammock, tofu synth echo park freegan. Synth pug migas brooklyn fingerstache vape thundercats lumbersexual yuccie selfies four dollar toast.</p>
-      <p class="content__para">Bicycle rights ugh slow-carb sriracha health goth affogato master cleanse next level tote bag. Semiotics hashtag brunch hell of man bun listicle. Direct trade swag sriracha green juice knausgaard 90's. Authentic letterpress bushwick four dollar toast pinterest direct trade iPhone 90's hella retro irony meditation kinfolk. Lo-fi brooklyn salvia VHS banjo ramps pickled kombucha paleo tattooed typewriter lomo cornhole pok pok.</p>
-      <p class="content__para">Bicycle rights VHS hella, pok pok chia austin plaid thundercats. Man bun williamsburg heirloom, cardigan flexitarian irony shaman flannel pitchfork. Try-hard thundercats copper mug, unicorn direct trade VHS vape you probably haven't heard of them crucifix chambray. Tacos 8-bit dreamcatcher church-key VHS leggings gentrify selfies synth hexagon chambray heirloom. Microdosing bicycle rights offal meggings fanny pack. 3 wolf moon health goth crucifix stumptown cliche, plaid franzen.</p>
-      <p class="content__para">Ugh hot chicken keffiyeh cold-pressed everyday carry wolf aesthetic iceland. DIY intelligentsia meditation, forage vape street art banh mi af ennui. Migas cray bitters ennui flannel. Put a bird on it lumbersexual biodiesel, locavore butcher narwhal edison bulb. Vegan flexitarian lomo copper mug biodiesel pug health goth. Marfa VHS flexitarian pork belly, fashion axe activated charcoal salvia occupy squid hammock chicharrones hashtag irony waistcoat health goth.</p>
-      <!-- Hipsum text to force scroll -->
     </section>
   </main>
   <footer class="site-footer"></footer>
