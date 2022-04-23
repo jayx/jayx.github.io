@@ -1,0 +1,209 @@
+.spinny {
+  display: grid;
+  min-height: 80vh;
+  place-items: center;
+  width: 100%;
+}
+
+.spinny figure {
+  border-radius: 50%;
+  height: 128px;
+  overflow: hidden;
+  position: absolute;
+  width: 128px;
+  z-index: 9;
+}
+
+.spinny nav {
+  position: absolute;
+}
+
+.spinny nav ul {
+  animation: spins 45s linear infinite;
+  position: absolute;
+}
+
+.spinny ul:before {
+  background: var(--theme-colour-darkblue);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 9rem;
+  left: -4.5rem;
+  position: absolute;
+  top: -4.5rem;
+  width: 9rem;
+}
+
+.spinny ul:after {
+  animation: offsets 15s linear infinite;
+  background: conic-gradient(white, var(--theme-colour-darkblue), white);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 8.5rem;
+  left: -4.25rem;
+  opacity: 1;
+  position: absolute;
+  top: -4.25rem;
+  transition: opacity 250ms ease-out;
+  width: 8.5rem;
+}
+
+.spinny ul:hover:after {
+  opacity: 0;
+}
+
+.spinny nav ul li {
+  animation: offsets 45s linear infinite;
+  border-radius: 50%;
+  display: grid;
+  height: 4rem;
+  left: 0px;
+  /* overflow: hidden; */
+  place-items: center;
+  position: absolute;
+  top: 0px;
+  width: 4rem;
+}
+
+.spinny nav ul li:nth-child(1) {
+  left: -2rem;
+  top: -12rem;
+}
+
+.spinny nav ul li:nth-child(2) {
+  left: 5rem;
+  top: -9rem;
+}
+
+.spinny nav ul li:nth-child(3) {
+  left: 8rem;
+  top: -2rem;
+}
+
+.spinny nav ul li:nth-child(4) {
+  left: 5rem;
+  top: 5rem;
+}
+
+.spinny nav ul li:nth-child(5) {
+  left: -12rem;
+  top: -2rem;
+}
+
+.spinny nav ul li:nth-child(6) {
+  left: -9rem;
+  top: 5rem;
+}
+
+.spinny nav ul li:nth-child(7) {
+  left: -2rem;
+  top: 8rem;
+}
+
+.spinny nav ul li:nth-child(8) {
+  left: -9rem;
+  top: -9rem;
+}
+
+.spinny nav ul li {
+  transform: scale(1);
+  transition: transform 300ms ease-out;
+}
+
+.spinny nav ul li:before {
+  animation: spins 45s linear infinite;
+  background: var(--theme-colour-darkblue);
+  border-radius: 2px;
+  content: "";
+  display: block;
+  height: 4px;
+  left: calc(100% + 2px);
+  position: absolute;
+  top: calc(50% - 2px);
+  transform: rotate(90deg);
+  transform-origin: -2.125rem 2px;
+  width: 2.5rem;
+  z-index: -1;
+}
+
+.spinny nav ul li:nth-child(2):before {
+  transform: rotate(135deg);
+}
+
+.spinny nav ul li:nth-child(3):before {
+  transform: rotate(180deg);
+}
+
+.spinny nav ul li:nth-child(4):before {
+  transform: rotate(225deg);
+}
+
+.spinny nav ul li:nth-child(5):before {
+  transform: rotate(0deg);
+}
+
+.spinny nav ul li:nth-child(6):before {
+  transform: rotate(315deg);
+}
+
+.spinny nav ul li:nth-child(7):before {
+  transform: rotate(270deg);
+}
+
+.spinny nav ul li:nth-child(8):before {
+  transform: rotate(45deg);
+}
+
+.spinny nav ul li:after {
+  border: 2px solid var(--theme-colour-darkblue);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4.25rem;
+  position: absolute;
+  width: 4.25rem;
+  z-index: -1;
+}
+
+.spinny nav ul li:hover {
+  transform: scale(1.2);
+}
+
+.spinny nav ul li a {
+  background-color: var(--theme-colour-darkblue);
+  border-radius: 50%;
+  color: white;
+  display: block;
+  height: 100%;
+  font-size: 0.5em;
+  font-weight: 600;
+  line-height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 350ms ease-out;
+  width: 100%;
+}
+
+.spinny nav ul li a:hover {
+  background-color: var(--theme-colour-deepblue);
+}
+
+.spinny nav ul:hover,
+.spinny nav ul:hover li,
+.spinny nav ul:hover li:before {
+  animation-play-state: paused;
+}
+
+@keyframes spins {
+  100% {
+    rotate: 1turn;
+  }
+}
+
+@keyframes offsets {
+  100% {
+    rotate: -1turn;
+  }
+}
