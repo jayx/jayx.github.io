@@ -1,0 +1,59 @@
+[class*="icon--"] {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--text-color);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.icon-text {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.5em;
+  white-space: nowrap;
+}
+
+.icon--s {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.icon--l {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.icon--xl {
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-eye-dropper {
+  mask-image: url(../img/icons/icon-eye-dropper.svg);
+  -webkit-mask-image: url(../img/icons/icon-eye-dropper.svg);
+}
+
+.icon-facebook {
+  mask-image: url(../img/icons/icon-facebook.svg);
+  -webkit-mask-image: url(../img/icons/icon-facebook.svg);
+}
+
+.icon-light-dark {
+  mask-image: url(../img/icons/icon-light-dark.svg);
+  -webkit-mask-image: url(../img/icons/icon-light-dark.svg);
+}
+
+.icon-linkedin {
+  mask-image: url(../img/icons/icon-linkedin.svg);
+  -webkit-mask-image: url(../img/icons/icon-linkedin.svg);
+}
+
+.icon-twitter {
+  mask-image: url(../img/icons/icon-twitter.svg);
+  -webkit-mask-image: url(../img/icons/icon-twitter.svg);
+}

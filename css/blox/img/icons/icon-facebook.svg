@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-facebook</title>
+    <g id="icon-facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="facebook-f-brands" transform="translate(8.965000, 2.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M14.0136719,15.75 L14.7913281,10.6826563 L9.9290625,10.6826563 L9.9290625,7.39429688 C9.9290625,6.00796875 10.6082812,4.65664063 12.7859375,4.65664063 L14.9964062,4.65664063 L14.9964062,0.34234375 C14.9964062,0.34234375 12.9904687,0 11.0725781,0 C7.06835938,0 4.45101563,2.42703125 4.45101563,6.820625 L4.45101563,10.6826563 L7.77156117e-16,10.6826563 L7.77156117e-16,15.75 L4.45101563,15.75 L4.45101563,28 L9.9290625,28 L9.9290625,15.75 L14.0136719,15.75 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
