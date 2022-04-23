@@ -1,0 +1,20 @@
+.gist.gist .gist-file {
+  border-color: var(--gist-file-border-color);
+}
+
+.gist.gist .gist-data {
+  --color-canvas-default: var(--gist-data-canvas-color);
+  border-color: var(--gist-file-border-color);
+}
+
+.gist.gist .gist-meta {
+  background-color: var(--gist-meta-canvas-color);
+}
+
+.gist.gist .blob-code {
+  --color-fg-default: var(--gist-color-fg-default);
+}
+
+.gist.gist .blob-code::selection {
+  background-color: red;
+}
