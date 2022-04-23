@@ -1,0 +1,83 @@
+:root {
+  /* ----- Theme palette ----- */
+  /* --- Grey ---  */
+  --default-black: #050312;
+  --default-grey-darkest: #2a2935;
+  --default-grey-darkest-a: #050312d9; /* black 85% */
+  --default-grey-darker: #4f4e59;
+  --default-grey-darker-a: #050312b3; /* black 70% */
+  --default-grey-dark: #828188;
+  --default-grey-dark-a: #05031280; /* black 50% */
+  --default-grey: #c0c0c4;
+  --default-grey-a: #05031240; /* black 25% */
+  --default-grey-light: #dad9dc;
+  --default-grey-light-a: #05031226; /* black 15% */
+  --default-grey-lighter: #e5e5e7;
+  --default-grey-lighter-a: #0503121a; /* black 10% */
+  --default-grey-lightest: #f2f2f3;
+  --default-grey-lightest-a: #0503120d; /* black 5% */
+  --default-white: #fcfcfc;
+ /* Blue */
+ --default-info: #9fe5f3;
+ --default-info-85: #ade9f5;
+ --default-info-a: #9fe5f3d9; /* info 85% */
+ --default-deep: #1cacc8;
+ --default-deep-85: #3eb8d0;
+ --default-deep-a: #1cacc8d9; /* deep 85% */
+ /* Green */
+ --default-calm: #7fcc6e;
+ --default-calm-85: #92d384;
+ --default-calm-a: #7fcc6ed9; /* calm 85% */
+ --default-success: #129f43;
+ --default-success-85: #35ad5f;
+ --default-success-a: #129f43d9; /* success 85% */
+ /* Yellow */
+ --default-caution: #f0ea50;
+ --default-caution-85: #f2ed6a;
+ --default-caution-a: #f0ea50d9; /* caution 85% */
+ /* Orange */
+ --default-warning: #f0cd50;
+ --default-warning-85: #f2d46a;
+ --default-warning-a: #f0cd50d9; /* warning 85% */
+ /* Dark orange */
+ --default-alert: #f09050;
+ --default-alert-85: #f2a06a;
+ --default-alert-a: #f09050d9; /* alert 85% */
+ /* Red */
+ --default-danger: #e81d1d;
+ --default-danger-85: #eb3f3f;
+ --default-danger-a: #e81d1dd9; /* danger 85% */
+ /* Pink */
+ --default-passion: #e81d6f;
+ --default-passion-85: #eb3f84;
+ --default-passion-a: #e81d6fd9; /* passion 85% */
+}
+
+:root {
+  --body-bg: var(--default-grey-lightest);
+  --header-bg: var(--default-white);
+  --footer-bg: var(--default-white);
+  --text-color: var(--default-black);
+  --shadow-color: var(--default-grey-light);
+  --border-color-default: var(--default-grey-light);
+  --banner-bg: var(--default-grey-light);
+  --banner-img-text-color: var(--default-white);
+  /* Github Gists */
+  --gist-file-border-color: var(--border-color-default);
+  --gist-data-canvas-color: var(--default-white);
+  --gist-meta-canvas-color: var(--default-grey-lightest);
+  --gist-color-fg-default: var(--text-color);
+}
+
+:root[theme="dark"] {
+  --body-bg: var(--default-grey-darkest);
+  --header-bg: var(--default-grey-darker);
+  --footer-bg: var(--default-black);
+  --text-color: var(--default-white);
+  --shadow-color: var(--default-grey-darker-a);
+  --border-color-default: var(--default-grey-darker);
+  --banner-bg: var(--default-black);
+  /* Github Gists */
+  --gist-data-canvas-color: var(--theme-grey-darkest);
+  --gist-meta-canvas-color: var(--gist-data-canvas-color);
+}
