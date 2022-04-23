@@ -6,35 +6,185 @@
 <link rel="stylesheet" type="text/css" href="css/jayx.css"/>
 </head>
 <body>
-  <header class="site-header box"></header>
-  <main role="main" class="site-main">
-    <!-- <aside id="main-nav"></aside> -->
-    <section class="page">
-      <article class="page__content">
-        <h1 class="heading--1--medium">Typography - headings</h1>
-        <h1 class="heading--1">Heading level 1 - 36px</h1>
-        <h2 class="heading--2">Heading level 2 - 28px</h2>
-        <h3 class="heading--3">Heading level 3 - 24px</h3>
-        <h4 class="heading--4">Heading level 4 - 20px</h4>
-      </article>
-      <article class="page__content">
-        <h1 class="heading--1--medium">Typography - text</h1>
-        <p class="heading--2">Regular paragraphs</p>
-        <p class="content__para">
-        Selfies seitan ennui, bitters art party man braid church-key coloring book gluten-free skateboard godard hammock. Bushwick iPhone small batch art party quinoa locavore cardigan blog, lyft 3 wolf moon meh. Raclette wayfarers kombucha echo park pour-over, deep v dreamcatcher normcore forage chillwave. Bitters keytar XOXO church-key trust fund pug palo santo authentic meggings asymmetrical photo booth distillery. Pabst crucifix try-hard pork belly copper mug yuccie. Lo-fi keffiyeh squid knausgaard. Next level polaroid chillwave, celiac PBR&B occupy prism kale chips. Vinyl waistcoat roof party yuccie. 8-bit affogato drinking vinegar, poke snackwave listicle street art hella kombucha keffiyeh freegan.</p>
-        <p>Fingerstache tofu pitchfork poutine, salvia offal pop-up blue bottle hashtag cray photo booth locavore forage air plant. Before they sold out thundercats tattooed meh, schlitz four loko helvetica mustache ennui twee you probably haven't heard of them kale chips scenester. Pork belly roof party salvia cray DIY. Ennui fashion axe godard, fixie gluten-free mlkshk truffaut humblebrag lumbersexual VHS shoreditch neutra iPhone typewriter prism. Raw denim chicharrones chartreuse, shabby chic four loko next level gastropub poutine actually trust fund banjo man bun health goth cloud bread. Salvia hexagon affogato man braid flannel direct trade. Before they sold out yuccie vice church-key waistcoat sriracha flannel sustainable keffiyeh brunch ennui asymmetrical bespoke thundercats vegan. Heirloom brooklyn tofu freegan blog marfa knausgaard you probably haven't heard of them. 3 wolf moon slow-carb swag blog. Slow-carb kickstarter tumblr activated charcoal. Pok pok YOLO chia, brooklyn air plant offal vegan green juice affogato kickstarter lo-fi you probably haven't heard of them squid. Flexitarian synth pinterest YOLO cardigan beard. Tacos sustainable palo santo cold-pressed fingerstache hashtag put a bird on it austin poke forage. Taiyaki cliche paleo, street art chia direct trade tbh fixie lyft austin.</p>
-        <p>Meggings bespoke affogato, gastropub letterpress PBR&B af fingerstache +1 shabby chic paleo. Pabst kinfolk quinoa adaptogen. Letterpress neutra health goth, hashtag taxidermy humblebrag coloring book. Enamel pin live-edge cray meggings bushwick hammock pop-up biodiesel freegan meh. Wayfarers chicharrones lo-fi, flannel affogato shoreditch cronut la croix chillwave tumblr. Kickstarter yr squid green juice pabst. Bitters hoodie pitchfork skateboard taiyaki glossier gochujang drinking vinegar irony ugh tumeric portland echo park. Listicle microdosing pour-over, snackwave blue bottle pug retro squid hammock gentrify fixie health goth. Pitchfork iceland deep v kitsch truffaut.</p>
-        <p>Schlitz bicycle rights polaroid banh mi waistcoat 8-bit tbh kogi vaporware godard williamsburg jean shorts man braid single-origin coffee. Artisan twee knausgaard woke butcher. Knausgaard put a bird on it celiac banjo af polaroid kickstarter banh mi letterpress intelligentsia man bun stumptown tofu. Try-hard salvia PBR&B, franzen venmo gochujang cornhole mlkshk subway tile craft beer godard. Semiotics mixtape 90's cloud bread unicorn banjo offal 8-bit distillery you probably haven't heard of them normcore gentrify etsy lyft literally. Pour-over before they sold out cold-pressed, kitsch bitters roof party selvage edison bulb photo booth flannel hexagon. Adaptogen venmo seitan raclette affogato kombucha. Cred plaid master cleanse vegan sustainable poutine viral cornhole VHS slow-carb next level kogi cliche etsy squid. Wayfarers waistcoat tousled single-origin coffee skateboard, chartreuse disrupt four loko normcore art party tacos stumptown. Forage portland slow-carb before they sold out ethical neutra etsy listicle everyday carry cardigan af. Typewriter four dollar toast readymade yuccie sustainable cliche pitchfork kogi. Franzen lo-fi tofu try-hard yr, crucifix vaporware flannel.</p>
-        <p class="heading--2">Bold and italic</p>
-        <p><b>Bold text</b> using <code>&lt;b&gt;</code></p>
-        <p><strong>Bold text</strong> using <code>&lt;strong&gt;</code></p>
-        <p><em>Italic text</em> using <code>&lt;em&gt;</code></p>
-      </article>
-      <p>This is my playground/sandbox/portfolio. I have been around frontend web development <a href="https://www.linkedin.com/in/jayxm/">for a while</a> and <a href="http://justcss.co.za">blog (very) infrequently</a> about CSS and such.</p>
-    </section>
+  <header id="page-header">
+    <div class="box--l row spaced--out">
+      <nav id="nav--main">
+        <ul class="row list--silent">
+          <li>
+            <a href="/">home</a>
+          </li>
+          <li>
+            <a href="blog.html">blog</a>
+          </li>
+          <li>
+            <a href="lib.html" class="active">library</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav--social">
+        <ul class="row list--silent">
+          <li>
+            <a href="https://www.linkedin.com/in/jayxm/" target="_blank" rel="noopener noreferrer"><span class="icon icon--l icon-linkedin"></span></a></li>
+          <li><a href="https://www.facebook.com/jayx.m" target="_blank" rel="noopener noreferrer"><span class="icon icon--l icon-facebook"></span></a></li>
+          <li><a href="https://twitter.com/Jayx" target="_blank" rel="noopener noreferrer"><span class="icon icon--l icon-twitter"></span></a></li>
+          <li><a data-toggle-theme><span class="icon icon--l icon-light-dark"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" role="main">
+    <article class="site-main__banner" data-bg="img-hosting">
+      <div class="box--s">
+        <header class="site-main__banner__synopsis">
+          <h1>Component library</h1>
+          <h6>where everything is made up and the parts don't matter</h2>
+        </header>
+      </div>
+    </article>
+    <article class="site-main__banner" data-bg>
+      <div class="box--s">
+        <header class="site-main__banner__synopsis">
+          <h1>Typographic styles</h1>
+        </header>
+      </div>
+    </article>
+    <article class="site-main__content">
+      <div class="box--s">
+        <article class="post">
+          <header>
+            <h1>Headings</h1>
+          </header>
+          <section class="post__body">
+            <h1>Heading level 1 - 2.5rem/36px, font-weight 600</h1>
+            <h2>Heading level 2 - 1.75rem/28px, font-weight 600</h2>
+            <h3>Heading level 3 - 1.5rem/24px, font-weight 600</h3>
+            <h4>Heading level 4 - 1.25rem/20px, font-weight 600</h4>
+            <h5>Heading level 5 - 1rem/16px, font-weight 600</h5>
+            <h6>Heading level 6 - 1rem/16px, font-weight 400</h6>
+          </section>
+        </article>
+        <article class="post">
+          <header>
+            <h1>Text</h1>
+          </header>
+          <section class="post__body">
+            <h2>Regular paragraphs</h2>
+            <p> Selfies seitan ennui, bitters art party man braid church-key coloring book gluten-free skateboard godard hammock. Bushwick iPhone small batch art party quinoa locavore cardigan blog, lyft 3 wolf moon meh. Raclette wayfarers kombucha echo park pour-over, deep v dreamcatcher normcore forage chillwave. Bitters keytar XOXO church-key trust fund pug palo santo authentic meggings asymmetrical photo booth distillery. Pabst crucifix try-hard pork belly copper mug yuccie. Lo-fi keffiyeh squid knausgaard. Next level polaroid chillwave, celiac PBR&B occupy prism kale chips. Vinyl waistcoat roof party yuccie. 8-bit affogato drinking vinegar, poke snackwave listicle street art hella kombucha keffiyeh freegan.</p>
+            <p>Fingerstache tofu pitchfork poutine, salvia offal pop-up blue bottle hashtag cray photo booth locavore forage air plant. Before they sold out thundercats tattooed meh, schlitz four loko helvetica mustache ennui twee you probably haven't heard of them kale chips scenester. Pork belly roof party salvia cray DIY. Ennui fashion axe godard, fixie gluten-free mlkshk truffaut humblebrag lumbersexual VHS shoreditch neutra iPhone typewriter prism. Raw denim chicharrones chartreuse, shabby chic four loko next level gastropub poutine actually trust fund banjo man bun health goth cloud bread. Salvia hexagon affogato man braid flannel direct trade. Before they sold out yuccie vice church-key waistcoat sriracha flannel sustainable keffiyeh brunch ennui asymmetrical bespoke thundercats vegan. Heirloom brooklyn tofu freegan blog marfa knausgaard you probably haven't heard of them. 3 wolf moon slow-carb swag blog. Slow-carb kickstarter tumblr activated charcoal. Pok pok YOLO chia, brooklyn air plant offal vegan green juice affogato kickstarter lo-fi you probably haven't heard of them squid. Flexitarian synth pinterest YOLO cardigan beard. Tacos sustainable palo santo cold-pressed fingerstache hashtag put a bird on it austin poke forage. Taiyaki cliche paleo, street art chia direct trade tbh fixie lyft austin.</p>
+            <p>Meggings bespoke affogato, gastropub letterpress PBR&B af fingerstache +1 shabby chic paleo. Pabst kinfolk quinoa adaptogen. Letterpress neutra health goth, hashtag taxidermy humblebrag coloring book. Enamel pin live-edge cray meggings bushwick hammock pop-up biodiesel freegan meh. Wayfarers chicharrones lo-fi, flannel affogato shoreditch cronut la croix chillwave tumblr. Kickstarter yr squid green juice pabst. Bitters hoodie pitchfork skateboard taiyaki glossier gochujang drinking vinegar irony ugh tumeric portland echo park. Listicle microdosing pour-over, snackwave blue bottle pug retro squid hammock gentrify fixie health goth. Pitchfork iceland deep v kitsch truffaut.</p>
+            <p>Schlitz bicycle rights polaroid banh mi waistcoat 8-bit tbh kogi vaporware godard williamsburg jean shorts man braid single-origin coffee. Artisan twee knausgaard woke butcher. Knausgaard put a bird on it celiac banjo af polaroid kickstarter banh mi letterpress intelligentsia man bun stumptown tofu. Try-hard salvia PBR&B, franzen venmo gochujang cornhole mlkshk subway tile craft beer godard. Semiotics mixtape 90's cloud bread unicorn banjo offal 8-bit distillery you probably haven't heard of them normcore gentrify etsy lyft literally. Pour-over before they sold out cold-pressed, kitsch bitters roof party selvage edison bulb photo booth flannel hexagon. Adaptogen venmo seitan raclette affogato kombucha. Cred plaid master cleanse vegan sustainable poutine viral cornhole VHS slow-carb next level kogi cliche etsy squid. Wayfarers waistcoat tousled single-origin coffee skateboard, chartreuse disrupt four loko normcore art party tacos stumptown. Forage portland slow-carb before they sold out ethical neutra etsy listicle everyday carry cardigan af. Typewriter four dollar toast readymade yuccie sustainable cliche pitchfork kogi. Franzen lo-fi tofu try-hard yr, crucifix vaporware flannel.</p>
+          </section>
+          <section class="post__body">
+            <h2>Bold and italic</h2>
+            <p><b>Bold text</b> using <code>&lt;b&gt;</code></p>
+            <p><strong>Bold text</strong> using <code>&lt;strong&gt;</code></p>
+            <p><i>Italic text</i> using <code>&lt;i&gt;</code></p>
+            <p><em>Italic text</em> using <code>&lt;em&gt;</code></p>
+          </section>
+        </article>
+        <article class="post">
+          <header>
+            <h1>Lists</h1>
+          </header>
+          <section class="post__body">
+            <h2>Unordered lists</h2>
+            <ul>
+              <li>List item one</li>
+              <li>List item two</li>
+              <li>List item three</li>
+              <li>List item four. Meggings bespoke affogato, gastropub letterpress PBR&B af fingerstache +1 shabby chic paleo. Pabst kinfolk quinoa adaptogen. Letterpress neutra health goth, hashtag taxidermy humblebrag coloring book. Enamel pin live-edge cray meggings bushwick hammock pop-up biodiesel freegan meh. Wayfarers chicharrones lo-fi, flannel affogato shoreditch cronut la croix chillwave tumblr. Kickstarter yr squid green juice pabst. Bitters hoodie pitchfork skateboard taiyaki glossier gochujang drinking vinegar irony ugh tumeric portland echo park. Listicle microdosing pour-over, snackwave blue bottle pug retro squid hammock gentrify fixie health goth. Pitchfork iceland deep v kitsch truffaut.</li>
+              <li>List item five. Schlitz bicycle rights polaroid banh mi waistcoat 8-bit tbh kogi vaporware godard williamsburg jean shorts man braid single-origin coffee. Artisan twee knausgaard woke butcher. Knausgaard put a bird on it celiac banjo af polaroid kickstarter banh mi letterpress intelligentsia man bun stumptown tofu. Try-hard salvia PBR&B, franzen venmo gochujang cornhole mlkshk subway tile craft beer godard. Semiotics mixtape 90's cloud bread unicorn banjo offal 8-bit distillery you probably haven't heard of them normcore gentrify etsy lyft literally. Pour-over before they sold out cold-pressed, kitsch bitters roof party selvage edison bulb photo booth flannel hexagon. Adaptogen venmo seitan raclette affogato kombucha. Cred plaid master cleanse vegan sustainable poutine viral cornhole VHS slow-carb next level kogi cliche etsy squid. Wayfarers waistcoat tousled single-origin coffee skateboard, chartreuse disrupt four loko normcore art party tacos stumptown. Forage portland slow-carb before they sold out ethical neutra etsy listicle everyday carry cardigan af. Typewriter four dollar toast readymade yuccie sustainable cliche pitchfork kogi. Franzen lo-fi tofu try-hard yr, crucifix vaporware flannel.</li>
+            </ul>
+            <h2>Ordered lists</h2>
+            <ol>
+              <li>List item one</li>
+              <li>List item two</li>
+              <li>List item three</li>
+              <li>List item four. Meggings bespoke affogato, gastropub letterpress PBR&B af fingerstache +1 shabby chic paleo. Pabst kinfolk quinoa adaptogen. Letterpress neutra health goth, hashtag taxidermy humblebrag coloring book. Enamel pin live-edge cray meggings bushwick hammock pop-up biodiesel freegan meh. Wayfarers chicharrones lo-fi, flannel affogato shoreditch cronut la croix chillwave tumblr. Kickstarter yr squid green juice pabst. Bitters hoodie pitchfork skateboard taiyaki glossier gochujang drinking vinegar irony ugh tumeric portland echo park. Listicle microdosing pour-over, snackwave blue bottle pug retro squid hammock gentrify fixie health goth. Pitchfork iceland deep v kitsch truffaut.</li>
+              <li>List item five. Schlitz bicycle rights polaroid banh mi waistcoat 8-bit tbh kogi vaporware godard williamsburg jean shorts man braid single-origin coffee. Artisan twee knausgaard woke butcher. Knausgaard put a bird on it celiac banjo af polaroid kickstarter banh mi letterpress intelligentsia man bun stumptown tofu. Try-hard salvia PBR&B, franzen venmo gochujang cornhole mlkshk subway tile craft beer godard. Semiotics mixtape 90's cloud bread unicorn banjo offal 8-bit distillery you probably haven't heard of them normcore gentrify etsy lyft literally. Pour-over before they sold out cold-pressed, kitsch bitters roof party selvage edison bulb photo booth flannel hexagon. Adaptogen venmo seitan raclette affogato kombucha. Cred plaid master cleanse vegan sustainable poutine viral cornhole VHS slow-carb next level kogi cliche etsy squid. Wayfarers waistcoat tousled single-origin coffee skateboard, chartreuse disrupt four loko normcore art party tacos stumptown. Forage portland slow-carb before they sold out ethical neutra etsy listicle everyday carry cardigan af. Typewriter four dollar toast readymade yuccie sustainable cliche pitchfork kogi. Franzen lo-fi tofu try-hard yr, crucifix vaporware flannel.</li>
+            </ol>
+          </section>
+          <section class="post__body">
+            <h2>Definition lists</h2>
+            <dl>
+              <dt>Definition list title one</dt>
+              <dd>Definition list one description one</dd>
+              <dd>Definition list one description two</dd>
+              <dt>Definition list title two</dt>
+              <dd>Definition list two description one</dd>
+              <dd>Definition list two description two</dd>
+              <dd>Definition list two description three. Schlitz bicycle rights polaroid banh mi waistcoat 8-bit tbh kogi vaporware godard williamsburg jean shorts man braid single-origin coffee. Meggings bespoke affogato, gastropub letterpress PBR&B af fingerstache +1 shabby chic paleo.</dd>
+              <dd>Definition list two description four</dd>
+              <dt>Definition list title three</dt>
+              <dd>Definition list three description one</dd>
+              <dd>Definition list three description two</dd>
+              <dt>Definition list title four</dt>
+              <dd>Definition list four description one</dd>
+              <dd>Definition list four description two</dd>
+              <dt>Definition list title five</dt>
+              <dd>Definition list five description one</dd>
+              <dd>Definition list five description two</dd>
+            </dl>
+          </section>
+        </article>
+      </div>
+    </article>
+    <article class="site-main__banner" data-bg>
+      <div class="box--s">
+        <header class="site-main__banner__synopsis">
+          <h1>Layout</h1>
+        </header>
+      </div>
+    </article>
+    <article class="site-main__content">
+      <div class="box--s">
+        <article class="post">
+          <header>
+            <h1>Grid</h1>
+          </header>
+        </article>
+      </div>
+    </article>
   </main>
-  <footer>
-    <p>Copyright &copy; 2017 - jayx | <a href="http://designsignature.co.za">designsignature</a></p>
+  <footer id="page-footer">
+    <div class="box--s">
+      <div class="grid--4">
+        <div class="grid__element">
+          <h4>Links</h4>
+          <nav>
+            <ul class="list--silent">
+              <li><a href="/" class="active">home</a></li>
+              <li><a href="blog.html">blog</a></li>
+              <li><a href="lib.html">library</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="grid__element">
+          <h4>Projects</h4>
+          <nav>
+            <ul class="list--silent">
+              <li><a href="http://designsignature.co.za" target="_blank" rel="noopener noreferrer">designsignature</a></li>
+              <li><a href="http://justcss.co.za" target="_blank" rel="noopener noreferrer">justcss</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="grid__element">
+          <h4>Social</h4>
+          <nav>
+            <ul class="list--silent">
+              <li><a href="https://www.linkedin.com/in/jayxm/" target="_blank" rel="noopener noreferrer"><span class="icon-text"><span class="icon icon--l icon-linkedin"></span> <span>Linkedin</span></a></li>
+              <li><a href="https://www.facebook.com/jayx.m" target="_blank" rel="noopener noreferrer"><span class="icon-text"><span class="icon icon--l icon-facebook"></span> <span>Facebook</span></span></a></li>
+              <li><a href="https://twitter.com/Jayx" target="_blank" rel="noopener noreferrer"><span class="icon-text"><span class="icon icon--l icon-twitter"></span> <span>Twitter</span></span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="grid__element">
+          <h4>About</h4>
+          <p><small>This is a thing, this describes the thing, this is my thing.</small></p>
+          <p><small>Copyright &copy; <time datetime="2022">2022</time> <a href="http://designsignature.co.za">designsignature</a></small></p>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/jayx.js"></script>
