@@ -75,12 +75,12 @@ body {
   text-shadow: 2px 2px 2px black;
 }
 
-[data-bg="img-design"] {
-  background-image: url(../img/bg/design.jpg);
+[data-bg="img-blog"] {
+  background-image: url(../img/bg/blog.jpg);
 }
 
-[data-bg="img-hosting"] {
-  background-image: url(../img/bg/hosting.jpg);
+[data-bg="img-blocks"] {
+  background-image: url(../img/bg/blocks.jpg);
 }
 
 .site-main__content {
