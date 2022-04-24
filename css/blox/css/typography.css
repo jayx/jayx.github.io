@@ -71,11 +71,57 @@ ul:not(.list--silent) {
   list-style-type: disc;
 }
 
-ol:not(.list--silent) {
+ol {
   list-style-type: decimal;
 }
 
 ul:not(.list--silent),
-ol:not(.list--silent) {
-  list-style-position: inside;
+ol {
+  list-style-position: outside;
+}
+
+* + ul:not(.list--silent),
+* + ol {
+  margin-top: 1.4rem;
+}
+
+*:not(.list--silent) > li {
+  margin-left: 2em;
+}
+
+ul:not(.list--silent) ul:not(.list--silent),
+ul:not(.list--silent) ol,
+ol ol,
+ol ul:not(.list--silent),
+*:not(.list--silent) > li + li {
+  margin-top: 0.5em;
+}
+
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+ol li {
+  position: relative;
+}
+
+ol > li::before {
+  content: counters(section, ".") ". ";
+  counter-increment: section;
+  position: absolute;
+  right: calc(100% + 0.25rem);
+}
+
+dt {
+  font-weight: 600;
+}
+
+dl > * + * {
+  margin-top: 0.5em;
+}
+
+* + dl,
+dd + dt {
+  margin-top: 1.4rem;
 }
