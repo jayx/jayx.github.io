@@ -37,28 +37,53 @@
   gap: 2rem;
 }
 
+/* Gutter utility can be used with either grid or flexbox */
+.gutter--none {
+  gap: 0;
+}
+
+.gutter--xs {
+  gap: 0.25rem;
+}
+
 .gutter--s {
+  gap: 0.5rem;
+}
+
+.gutter--m {
   gap: 1rem;
 }
 
-.gutter--l {
-  gap: 4rem;
-}
-
-[class*="grid__column"] {
+/* Make grid items span multiple columns and rows */
+[class*="grid__item"] {
   grid-column: auto / span 1;
+  grid-row: auto / span 1;
 }
 
-.grid__column--2 {
+/* Columns */
+[class*="grid__item--"][class*="--c2"] {
   grid-column: auto / span 2;
 }
 
-.grid__column--3 {
+[class*="grid__item--"][class*="--c3"] {
   grid-column: auto / span 3;
 }
 
-.grid__column--4 {
+[class*="grid__item--"][class*="--c4"] {
   grid-column: auto / span 4;
+}
+
+/* Rows */
+[class*="grid__item--"][class*="--r2"] {
+  grid-row: auto / span 2;
+}
+
+[class*="grid__item--"][class*="--r3"] {
+  grid-row: auto / span 3;
+}
+
+[class*="grid__item--"][class*="--r4"] {
+  grid-row: auto / span 4;
 }
 
 .row,
