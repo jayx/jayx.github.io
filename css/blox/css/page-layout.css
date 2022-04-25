@@ -122,3 +122,14 @@ body {
   padding-block: 4rem 6rem;
   place-items: center;
 }
+
+/* 
+App specific
+TODO - move to app.css
+*/
+
+.app__test {
+  padding: 1rem;
+  border: 1px solid fuchsia;
+  color: fuchsia;
+}
