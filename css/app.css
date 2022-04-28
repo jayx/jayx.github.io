@@ -1,3 +1,9 @@
+.app__test {
+  padding: 1rem;
+  border: 1px solid var(--default-passion);
+  color: var(--default-passion);
+}
+
 [class*="app__swatch"] {
   background-color: transparent;
   color: var(--text-color);

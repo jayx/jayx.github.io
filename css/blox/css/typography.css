@@ -1,12 +1,4 @@
-body{
-  color: var(--text-color);
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
-  line-height: 1.4;
-  -webkit-font-smoothing: auto;
-}
-
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin-block: 1.4em 0.7em;
@@ -46,19 +38,25 @@ h6 {
   font-weight: 400;
 }
 
+/* Paragraphs */
 p {
   font-size: 1em;
 }
 
-p + p{
+/* We repeat this pattern in a few places to ensure spacing between blocks of text (paragraphs and lists).
+This avoids the whole issue of having to set zero margins when a container has a paragraph or list as a first descendant.
+Headings already have a top margin muted, but separating blocks of text in line with their hierarchy and .post__body setting an even margin between blocks. */
+p + p {
   margin-top: 1.4em;
 }
 
-b,strong{
+/* Font styles */
+b,
+strong {
   font-weight: bold;
 }
 
-em{
+em {
   font-style: italic;
 }
 
@@ -67,10 +65,13 @@ small,
   font-size: 0.75em;
 }
 
+/* Lists */
+/* We mute the list-style on utility only. Sure, this makes a utlity necessary, but still better than muting list-style everywhere it's not required (e.g. every nav). */
 ul:not(.list--silent) {
   list-style-type: disc;
 }
 
+/* No need to mute ordered list-style, because we shouldn't use ordered lists for other things */
 ol {
   list-style-type: decimal;
 }
@@ -80,11 +81,13 @@ ol {
   list-style-position: outside;
 }
 
+/* Same as with paragraphs, we only set a top margin when a list is preceded by another block. */
 * + ul:not(.list--silent),
 * + ol {
   margin-top: 1.4rem;
 }
 
+/* Set left margin to accommodate count on a list item level to set up for counter increment. */
 *:not(.list--silent) > li {
   margin-left: 2em;
 }
@@ -121,6 +124,8 @@ dl > * + * {
   margin-top: 0.5em;
 }
 
+/* Set top margins to definition lists adjacent to other elements AS WELL AS definition titles following defintion descriptions.
+This ensures consistency in spacing, irrespective of whether we use separate definition lists or multiple definition titles followed by descriptions. */
 * + dl,
 dd + dt {
   margin-top: 1.4rem;
