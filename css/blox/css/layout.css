@@ -37,23 +37,6 @@
   gap: 2rem;
 }
 
-/* Gutter utility can be used with either grid or flexbox */
-.gutter--none {
-  gap: 0;
-}
-
-.gutter--xs {
-  gap: 0.25rem;
-}
-
-.gutter--s {
-  gap: 0.5rem;
-}
-
-.gutter--m {
-  gap: 1rem;
-}
-
 /* Make grid items span multiple columns and rows */
 [class*="grid__item"] {
   grid-column: auto / span 1;
@@ -86,6 +69,7 @@
   grid-row: auto / span 4;
 }
 
+/* Make flexbox utilities */
 .row,
 .stack {
   display: flex;
@@ -99,3 +83,21 @@
 .spaced--out {
   justify-content: space-between;
 }
+
+/* Gutter utility can be used with either grid or flexbox */
+.gutter--none {
+  gap: 0;
+}
+
+.gutter--xs {
+  gap: 0.25rem;
+}
+
+.gutter--s {
+  gap: 0.5rem;
+}
+
+.gutter--m {
+  gap: 1rem;
+}
+
