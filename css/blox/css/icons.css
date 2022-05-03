@@ -43,6 +43,11 @@
   -webkit-mask-image: url(../img/icons/icon-facebook.svg);
 }
 
+.icon-instagram {
+  mask-image: url(../img/icons/icon-instagram.svg);
+  -webkit-mask-image: url(../img/icons/icon-instagram.svg);
+}
+
 .icon-light-dark {
   mask-image: url(../img/icons/icon-light-dark.svg);
   -webkit-mask-image: url(../img/icons/icon-light-dark.svg);
@@ -56,4 +61,9 @@
 .icon-twitter {
   mask-image: url(../img/icons/icon-twitter.svg);
   -webkit-mask-image: url(../img/icons/icon-twitter.svg);
+}
+
+.icon-youtube {
+  mask-image: url(../img/icons/icon-youtube.svg);
+  -webkit-mask-image: url(../img/icons/icon-youtube.svg);
 }
