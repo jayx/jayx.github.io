@@ -3,11 +3,14 @@ body {
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--page-header-scroll);
+}
+
 body {
   background-color: var(--body-bg);
   color: var(--text-color);
-  display: flex;
-  flex-direction: column;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 100;

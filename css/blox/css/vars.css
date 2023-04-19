@@ -51,9 +51,25 @@
  --default-passion: #e81d6f;
  --default-passion-85: #eb3f84;
  --default-passion-a: #e81d6fd9; /* passion 85% */
+ /* Size */
+ --default-size-16-xs: 0.25rem; /* 4px */
+ --default-size-16-s: 0.5rem; /* 8px */
+ --default-size-12-m: 0.75rem; /* 12px */
+ --default-size-16-m: 1rem; /* 16px */
+ --default-size-12-l: 1.5rem; /* 24px */
+ --default-size-16-l: 2rem; /* 32px */
+ --default-size-12-xl: 3rem; /* 48px */
+ --default-size-16-xl: 4rem; /* 64px */
+ --default-font-size: 1rem;
+ /* Weight */
+ --default-weight-light: 100;
+ --default-weight-regular: 400;
+ --default-weight-heavy: 600;
+ --default-weight-black: 900;
 }
 
 :root {
+  /* Palette */
   --body-bg: var(--default-grey-lightest);
   --header-bg: var(--default-white);
   --footer-bg: var(--default-white);
@@ -67,6 +83,24 @@
   --gist-data-canvas-color: var(--default-white);
   --gist-meta-canvas-color: var(--default-grey-lightest);
   --gist-color-fg-default: var(--text-color);
+  /* Size & weight */
+  /* Headings, text size & weight */
+  --heading-weight: var(--default-weight-heavy);
+  --heading-size-1: calc(var(--default-font-size) * 2.5);
+  --heading-size-2: calc(var(--default-font-size) * 1.75);
+  --heading-size-3: calc(var(--default-font-size) * 1.5);
+  --heading-size-4: calc(var(--default-font-size) * 1.25);
+  --heading-size-5: calc(var(--default-font-size) * 1);
+  --heading-size-6: calc(var(--default-font-size) * 1);
+  --body-text-size: var(--default-font-size);
+  /* Border radius */
+  --radius-s: var(--default-size-16-xs);
+  --radius-m: var(--default-size-16-s);
+  --radius-l: var(--default-size-16-m);
+  /* Components */
+  /* Page header */
+  --page-header-height: var( --default-size-12-xl);
+  --page-header-scroll: calc(var( --page-header-height) * 1.4);
 }
 
 :root[theme="dark"] {
