@@ -1,0 +1,78 @@
+[class*="card--"] {
+  background: var(--body-bg);
+  border-radius: var(--radius-l);
+  box-shadow: 0 0 1rem var(--shadow-color);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+[class*="card--"].post + [class*="card--"].post {
+  margin-top: 2rem;
+}
+
+.card--x {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card--y {
+  display: flex;
+  flex-direction: column;
+}
+
+.card--y .card__content > *:nth-last-child(2) {
+  flex-grow: 1;
+}
+
+.card__image {
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+/* .card--x .card__image {
+  padding-top: 40%;
+  width: 40%;
+} */
+
+/* .card--y .card__image {
+  margin-bottom: 1rem;
+} */
+
+.card__image figure {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card__image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.product__details {
+  text-align: center;
+}
+
+.product__price {
+  color: var(--product-price-color);
+  font-size: var(--heading-size-3);
+  font-weight: var(--heading-weight);
+}
+
+/* TODO move this after experiment */
+.nav--in-page > ul {
+  position: sticky;
+  top: 4rem;
+}

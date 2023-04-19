@@ -1,40 +1,49 @@
 /* Center content and limit width */
 [class*="box--"] {
-  max-width: 90vw;
-  width: 100vw;
+  max-width: 42rem;
+  width: 80vw;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48.25rem) {
+  [class*="box--"] {
+    width: 90vw;
+  }
+
+  .box--xs {
+    max-width: 48rem;
+  }
+  
   .box--s {
-    max-width: 50vw;
+    max-width: 64rem;
   }
   
   .box--m {
-    max-width: 60vw;
+    max-width: 80rem;
   }
   
   .box--l {
-    max-width: 90vw;
+    max-width: 96vw;
   }
 }
 
-@media (min-width: 64rem) {
-  .grid--2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .grid--3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .grid--4 {
-    grid-template-columns: repeat(4, 1fr);
+@media (min-width: 64.25rem) {
+  [class*="grid--"] {
+    display: grid;
+    gap: 4rem;
+    max-width: 100%;
   }
 }
 
-[class*="grid--"] {
-  display: grid;
-  gap: 2rem;
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* Make grid items span multiple columns and rows */
@@ -85,6 +94,29 @@
 }
 
 /* Gutter utility can be used with either grid or flexbox */
+/* To start off, use margin-top to separate grid items before they display grid */
+@media (max-width: 64rem) {
+  [class*="grid__item"] + [class*="grid__item"] {
+    margin-top: 2rem;
+  }
+
+  .gutter--none [class*="grid__item"] + [class*="grid__item"] {
+    margin-top: 0;
+  }
+
+  .gutter--xs [class*="grid__item"] + [class*="grid__item"] {
+    margin-top: 0.25rem;
+  }
+
+  .gutter--s [class*="grid__item"] + [class*="grid__item"] {
+    margin-top: 0.5rem;
+  }
+
+  .gutter--m [class*="grid__item"] + [class*="grid__item"] {
+    margin-top: 1rem;
+  }
+}
+
 .gutter--none {
   gap: 0;
 }
@@ -101,3 +133,6 @@
   gap: 1rem;
 }
 
+.gutter--l {
+  gap: 2rem;
+}

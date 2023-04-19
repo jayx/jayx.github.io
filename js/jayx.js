@@ -52,7 +52,6 @@ $(document).ready(function(){
 
   // theme toggler functionality
   $('[data-toggle-theme]').on('click', function () {
-    console.log("theme")
     toggleTheme();
     return false;
   });

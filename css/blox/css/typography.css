@@ -1,6 +1,6 @@
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: var(--heading-weight);
   margin-block: 1.4em 0.7em;
 }
 
@@ -14,33 +14,33 @@ h6:first-child {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: var(--heading-size-1);
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: var(--heading-size-2);
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: var(--heading-size-3);
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: var(--heading-size-4);
 }
 
 h5 {
-  font-size: 1em;
+  font-size: var(--heading-size-5);
 }
 
 h6 {
-  font-size: 1em;
-  font-weight: 400;
+  font-size: var(--heading-size-6);
+  font-weight: var(--default-weight-regular);
 }
 
 /* Paragraphs */
 p {
-  font-size: 1em;
+  font-size: var(--body-text-size);
 }
 
 /* We repeat this pattern in a few places to ensure spacing between blocks of text (paragraphs and lists).
@@ -48,6 +48,12 @@ This avoids the whole issue of having to set zero margins when a container has a
 Headings already have a top margin muted, but separating blocks of text in line with their hierarchy and .post__body setting an even margin between blocks. */
 p + p {
   margin-top: 1.4em;
+}
+
+/* Anchors */
+a,
+a * {
+  color: inherit;
 }
 
 /* Font styles */
@@ -129,4 +135,9 @@ This ensures consistency in spacing, irrespective of whether we use separate def
 * + dl,
 dd + dt {
   margin-top: 1.4rem;
+}
+
+/* Text utilities */
+.list--silent {
+  list-style: none;
 }
