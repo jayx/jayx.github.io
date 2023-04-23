@@ -1,4 +1,32 @@
 /* Post general layout is covered in page-layout.css */
+/* Category posts list - .post--with-image */
+.post--with-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.post--with-image[class*="--c"] {
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.post--with-image .post__image img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.post--with-image[class*="--c2"] .post__image {
+  max-width: calc(50% - 2rem);
+  min-width: calc(50% - 2rem);
+  width: calc(50% - 2rem);
+}
+
+.post--with-image[class*="--c3"] .post__image {
+  max-width: calc(33.3% - (8rem / 3));
+  min-width: calc(33.3% - (8rem / 3));
+  width: calc(33.3% - (8rem / 3));
+}
+
 /* Post header */
 .post__header {
   align-items: center;
@@ -10,15 +38,20 @@
   margin: 0;
 }
 
-.post__heading .next {
+.post .next {
   text-decoration: none;
 }
 
-.post__heading .next:hover {
+.post a:hover {
   color: var(--text-color-lighter);
 }
 
-.post__heading .next::after {
+/* Separate selector for browsers that support :has */
+.post:has(.post__image a:hover) a {
+  color: var(--text-color-lighter);
+}
+
+.post .next::after {
   margin-left: 0.5em;
 }
 
@@ -65,8 +98,17 @@
   margin-block: 2rem;
 }
 
-.post__image-pic {
+.post__image img {
   width: 100%;
+}
+
+.post__image a img {
+  scale: 100%;
+  transition: scale 250ms;
+}
+
+.post__image a:hover img {
+  scale: 105%;
 }
 
 .post__image-caption {
