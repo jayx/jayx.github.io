@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-new-tab</title>
+    <g id="icon-new-tab" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,1 L8,5 L5,5 L5,27 L27,27 L27,24 L31,24 L31,28 C31,29.6568542 29.6568542,31 28,31 L4,31 C2.34314575,31 1,29.6568542 1,28 L1,4 C1,2.34314575 2.34314575,1 4,1 L8,1 Z M31,1 L31,19 L27,19 L27,7.828 L16.4142136,18.4142136 C15.633165,19.1952621 14.366835,19.1952621 13.5857864,18.4142136 C12.8458457,17.6742728 12.8069014,16.4987886 13.4689537,15.7130012 L13.5857864,15.5857864 L24.17,5 L13,5 L13,1 L31,1 Z" id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>
