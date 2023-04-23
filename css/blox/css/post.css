@@ -1,0 +1,81 @@
+/* Post general layout is covered in page-layout.css */
+/* Post header */
+.post__header {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.post__heading {
+  margin: 0;
+}
+
+.post__heading .next {
+  text-decoration: none;
+}
+
+.post__heading .next:hover {
+  color: var(--text-color-lighter);
+}
+
+.post__heading .next::after {
+  margin-left: 0.5em;
+}
+
+/* Post meta */
+.post__date {
+  align-items: center;
+  border-right: 2px solid var(--text-color);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75em;
+  font-weight: var(--default-weight-black);
+  line-height: 1;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.post__date .date {
+  font-size: 1.4em;
+}
+
+.post__date .month {
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.post__category {
+  font-size: 0.9rem;
+}
+
+/* In-page navigation */
+.nav--in-page ul {
+  position: sticky;
+  top: var(--page-header-scroll);
+}
+
+.nav--in-page .active {
+  font-weight: var(--default-weight-heavy);
+  pointer-events: none;
+  text-decoration: none;
+}
+
+/* Post image */
+.post__image {
+  margin-block: 2rem;
+}
+
+.post__image-pic {
+  width: 100%;
+}
+
+.post__image-caption {
+  color: var(--text-color-lighter);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-block: 0.75rem;
+}
+
+.post__image-caption > * {
+  font-size: inherit;
+}

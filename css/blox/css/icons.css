@@ -48,6 +48,11 @@
   -webkit-mask-image: url(../img/icons/icon-instagram.svg);
 }
 
+.icon-new-tab {
+  mask-image: url(../img/icons/icon-new-tab.svg);
+  -webkit-mask-image: url(../img/icons/icon-new-tab.svg);
+}
+
 .icon-light-dark {
   mask-image: url(../img/icons/icon-light-dark.svg);
   -webkit-mask-image: url(../img/icons/icon-light-dark.svg);

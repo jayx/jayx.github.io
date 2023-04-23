@@ -1,3 +1,8 @@
+[data-bg="img-star-beach"] {
+  background-image: url(../img/bg/star-beach.jpg);
+}
+
+/* Test and library styles */
 .app__test {
   padding: 1rem;
   border: 1px solid var(--default-passion);

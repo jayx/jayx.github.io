@@ -74,6 +74,7 @@
   --header-bg: var(--default-white);
   --footer-bg: var(--default-white);
   --text-color: var(--default-black);
+  --text-color-lighter: var(--default-grey-dark);
   --shadow-color: var(--default-grey-light);
   --border-color-default: var(--default-grey-light);
   --banner-bg: var(--default-grey-light);
@@ -101,6 +102,8 @@
   /* Page header */
   --page-header-height: var( --default-size-12-xl);
   --page-header-scroll: calc(var( --page-header-height) * 1.4);
+  /* Disqus variables */
+  --publisher-color: var(--text-color);
 }
 
 :root[theme="dark"] {
@@ -108,9 +111,12 @@
   --header-bg: var(--default-grey-darker);
   --footer-bg: var(--default-black);
   --text-color: var(--default-white);
+  --text-color-lighter: var(--default-grey-light);
   --shadow-color: var(--default-grey-darker-a);
   --border-color-default: var(--default-grey-darker);
   --banner-bg: var(--default-black);
+  /* Disqus variables */
+  --publisher-color: var(--text-color);
   /* Github Gists */
   --gist-data-canvas-color: var(--theme-grey-darkest);
   --gist-meta-canvas-color: var(--gist-data-canvas-color);
