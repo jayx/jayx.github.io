@@ -17,3 +17,23 @@ body {
   line-height: 1.4;
   -webkit-font-smoothing: auto;
 }
+
+/* Custom scroll bars */
+* {
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-bg-color);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: 0.5rem;
+}

@@ -5,11 +5,6 @@
 //   $('#main-nav').load('partials/nav.html nav');
 // });
 
-// Check localstorage for theme, else set theme and localstorage
-var html = document.getElementsByTagName("html")[0];
-html.setAttribute("theme", localStorage.getItem('theme') || 'light');
-
-
 // Adjust header
 var headerHeight = $('header').height() / 2;
 $(document).scroll(function(e){
@@ -22,10 +17,11 @@ $(document).scroll(function(e){
   }
 });
 
+// Check localstorage for theme, else set theme and localstorage
+var html = document.getElementsByTagName("html")[0];
+html.setAttribute("theme", localStorage.getItem('theme') || 'light');
+
 $(document).ready(function(){
-
-
-  
   // switch between light/dark themes
   toggleTheme = function () {
     var theme = localStorage.getItem('theme') !== 'dark' ? 'dark' : 'light';
@@ -56,4 +52,15 @@ $(document).ready(function(){
     return false;
   });
 
+});
+
+// Check overflow for gallery component
+$(window).on("load resize", function() {
+  $sliderWidth = $('[data-gallery-slider]').get(0).scrollWidth;
+  $galleryWidth = $('[data-gallery]').width();
+  if ($sliderWidth > $galleryWidth) {
+    $('[data-gallery-slider]').addClass('slider--scrolling');
+  } else {
+    $('[data-gallery-slider]').removeClass('slider--scrolling');
+  }
 });

@@ -68,6 +68,10 @@
   padding: 0.5rem 1rem 0.5rem 0;
 }
 
+.site-main__banner .post__date {
+  border-right-color: var(--banner-img-text-color);
+}
+
 .post__date .date {
   font-size: 1.4em;
 }

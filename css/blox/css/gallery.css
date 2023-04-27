@@ -1,0 +1,33 @@
+[class*="post__gallery"] {
+  height: clamp(20rem, 20vw, 45rem);
+  margin-block: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.post__gallery--up {
+  position: relative;
+  margin-bottom: -6rem;
+  top: -8rem;
+}
+
+.gallery__slider {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+.gallery__slider:not(.slider--scrolling) {
+  justify-content: center;
+}
+
+.gallery__image {
+  aspect-ratio: 1;
+  height: 100%;
+}
+
+.gallery__image img:hover {
+  scale: 175%;
+  transition: scale 250ms;
+  z-index: 99;
+}
