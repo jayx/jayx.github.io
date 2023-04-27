@@ -79,6 +79,8 @@
   --border-color-default: var(--default-grey-light);
   --banner-bg: var(--default-grey-light);
   --banner-img-text-color: var(--default-white);
+  --scrollbar-color: var(--default-grey-light);
+  --scrollbar-bg-color: var(--body-bg);
   /* Github Gists */
   --gist-file-border-color: var(--border-color-default);
   --gist-data-canvas-color: var(--default-white);
@@ -115,6 +117,7 @@
   --shadow-color: var(--default-grey-darker-a);
   --border-color-default: var(--default-grey-darker);
   --banner-bg: var(--default-black);
+  --scrollbar-color: var(--default-grey-darker);
   /* Disqus variables */
   --publisher-color: var(--text-color);
   /* Github Gists */
