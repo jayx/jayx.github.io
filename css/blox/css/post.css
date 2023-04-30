@@ -22,9 +22,16 @@
 }
 
 .post--with-image[class*="--c3"] .post__image {
+  margin-bottom: 0;
   max-width: calc(33.3% - (8rem / 3));
   min-width: calc(33.3% - (8rem / 3));
   width: calc(33.3% - (8rem / 3));
+}
+
+.post--with-image[class*="--c3"] .post__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Post header */
@@ -124,4 +131,11 @@
 
 .post__image-caption > * {
   font-size: inherit;
+}
+
+/* Post closing paragraph */
+.post__closing {
+  background-color: var(--banner-bg);
+  border-radius: 0.5em;
+  padding: 1em;
 }
