@@ -27,7 +27,7 @@
 }
 
 .gallery__image img:hover {
-  scale: 175%;
+  scale: 125%;
   transition: scale 250ms;
   z-index: 99;
 }
