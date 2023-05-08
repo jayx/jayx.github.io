@@ -1,0 +1,30 @@
+.nav--breadcrumbs {
+  color: var(--text-color-lighter);
+  font-size: 0.85rem;
+  padding-block: 1rem;
+}
+
+.nav--breadcrumbs ul {
+  gap: 0.5em;
+}
+
+.nav--breadcrumbs li:last-child {
+  font-style: italic;
+}
+
+.nav--breadcrumbs a {
+  display: inline-block;
+}
+
+.nav--breadcrumbs a:hover {
+  color: var(--text-color);
+}
+
+.nav--breadcrumbs ul li:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  line-height: 1em;
+  margin-left: 0.25em;
+  vertical-align: middle;
+}
+

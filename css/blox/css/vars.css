@@ -102,8 +102,9 @@
   --radius-l: var(--default-size-16-m);
   /* Components */
   /* Page header */
-  --page-header-height: var( --default-size-12-xl);
-  --page-header-scroll: calc(var( --page-header-height) * 1.4);
+  --page-header-height: var(--default-size-12-xl);
+  --page-header-scroll: calc(var(--page-header-height) * 1.4);
+  --page-content-scroll: calc(var(--page-header-scroll) * 2);
   /* Disqus variables */
   --publisher-color: var(--text-color);
 }

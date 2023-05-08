@@ -56,11 +56,13 @@ $(document).ready(function(){
 
 // Check overflow for gallery component
 $(window).on("load resize", function() {
-  $sliderWidth = $('[data-gallery-slider]').get(0).scrollWidth;
-  $galleryWidth = $('[data-gallery]').width();
-  if ($sliderWidth > $galleryWidth) {
-    $('[data-gallery-slider]').addClass('slider--scrolling');
-  } else {
-    $('[data-gallery-slider]').removeClass('slider--scrolling');
-  }
+  if ($('[data-gallery]').length) {
+    $sliderWidth = $('[data-gallery-slider]').get(0).scrollWidth;
+    $galleryWidth = $('[data-gallery]').width();
+    if ($sliderWidth > $galleryWidth) {
+      $('[data-gallery-slider]').addClass('slider--scrolling');
+    } else {
+      $('[data-gallery-slider]').removeClass('slider--scrolling');
+    }
+  };
 });
