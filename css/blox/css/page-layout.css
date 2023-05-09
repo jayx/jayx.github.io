@@ -127,6 +127,15 @@
 }
 
 /* Posts */
+.post.tagged.post.tagged {
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+
+.post.not-tagged {
+  display: none;
+}
+
 .post > *:first-child {
   margin-top: 0;
 }

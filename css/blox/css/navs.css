@@ -28,3 +28,41 @@
   vertical-align: middle;
 }
 
+.nav--in-page > ul > li + li {
+  margin-top: 2rem;
+}
+
+/* Post tags nav */
+.post__tags > ul,
+.post__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.tag {
+  background-color: var(--bg-contrast-light);
+  border-radius: 0.8em;
+  line-height: 1.6em;
+  padding-inline: 0.75em;
+}
+
+.tag__label {
+  font-size: 0.75em;
+  text-decoration: none;
+}
+
+/* Post count */
+.count {
+  background-color: var(--bg-contrast-heavy);
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: var(--default-weight-heavy);
+  line-height: 3ch;
+  margin-right: -0.65em;
+  text-align: center;
+  vertical-align: middle;
+  width: 3ch;
+}

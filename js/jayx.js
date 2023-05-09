@@ -66,3 +66,16 @@ $(window).on("load resize", function() {
     }
   };
 });
+
+// Select tags
+$('[data-tag-filter]').on('click', function () {
+  var selectedTag = $(this).data('tag-filter');
+  $('.post').removeClass('tagged not-tagged');
+  $('.post:has([data-tag="' + selectedTag + '"])').addClass('tagged');
+  $('.post:not(.tagged)').addClass('not-tagged');
+});
+
+// Clear tag selection
+$('[data-clear-tags]').on('click', function () {
+  $('.post').removeClass('tagged not-tagged');
+});
