@@ -127,6 +127,29 @@
 }
 
 /* Posts */
+.post.tagged.post.tagged {
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+
+.post.not-tagged {
+  display: none;
+}
+
+/* .post.not-tagged.post.not-tagged {
+  margin-top: 0;
+} */
+
+.post {
+}
+
+/* .post.not-tagged,
+.post.not-tagged + .post.not-tagged,
+.post.tagged + .post.not-tagged,
+.post.not-tagged + .post.tagged {
+  margin-top: 0;
+} */
+
 .post > *:first-child {
   margin-top: 0;
 }

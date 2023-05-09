@@ -73,6 +73,8 @@
   --body-bg: var(--default-grey-lightest);
   --header-bg: var(--default-white);
   --footer-bg: var(--default-white);
+  --bg-contrast-light: var(--default-grey-lighter);
+  --bg-contrast-heavy: var(--default-grey-dark);
   --text-color: var(--default-black);
   --text-color-lighter: var(--default-grey-dark);
   --shadow-color: var(--default-grey-light);
@@ -113,6 +115,8 @@
   --body-bg: var(--default-grey-darkest);
   --header-bg: var(--default-grey-darker);
   --footer-bg: var(--default-black);
+  --bg-contrast-light: var(--default-grey-darker);
+  --bg-contrast-heavy: var(--default-black);
   --text-color: var(--default-white);
   --text-color-lighter: var(--default-grey-light);
   --shadow-color: var(--default-grey-darker-a);
