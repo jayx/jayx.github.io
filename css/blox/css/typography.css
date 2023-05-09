@@ -56,7 +56,7 @@ a * {
   color: inherit;
 }
 
-/* When a link opens in a new tab/window  */
+/* When a link opens in a new tab/window 
 a[target="_blank"] {
   position: relative;
   white-space: nowrap;
@@ -85,7 +85,7 @@ a[target="_blank"]::after {
 
 a[target="_blank"]:hover::after {
   opacity: 1;
-}
+} */
 
 /* Font styles */
 b,
