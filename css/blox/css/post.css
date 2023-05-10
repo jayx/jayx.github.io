@@ -38,7 +38,7 @@
 .post__header {
   align-items: center;
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 .post__heading {
@@ -93,7 +93,6 @@
   align-items: center;
   display: flex;
   gap: 3rem;
-  margin-block: 1.5rem;
 }
 
 .post__category {
