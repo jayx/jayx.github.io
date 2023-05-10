@@ -18,6 +18,13 @@ body {
   -webkit-font-smoothing: auto;
 }
 
+/* Some forgotten elements */
+hr {
+  border: 0;
+  border-top: 1px solid var(--text-color-lighter);
+  margin-block: 1.6rem;
+}
+
 /* Custom scroll bars */
 * {
   scrollbar-color: var(--scrollbar-color) var(--scrollbar-bg-color);
