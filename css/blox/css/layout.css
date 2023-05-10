@@ -28,6 +28,7 @@
 
 @media (min-width: 64.25rem) {
   [class*="grid--"] {
+    align-items: start;
     display: grid;
     gap: 4rem;
     min-width: 100%;
