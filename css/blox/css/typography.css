@@ -1,7 +1,7 @@
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: var(--heading-weight);
-  margin-block: 1.4em 0.7em;
+  margin-block: 1.4em 0.8em;
 }
 
 h1:first-child,
@@ -9,7 +9,8 @@ h2:first-child,
 h3:first-child,
 h4:first-child,
 h5:first-child,
-h6:first-child {
+h6:first-child,
+P:first-child {
   margin-top: 0;
 }
 
@@ -46,7 +47,7 @@ p {
 /* We repeat this pattern in a few places to ensure spacing between blocks of text (paragraphs and lists).
 This avoids the whole issue of having to set zero margins when a container has a paragraph or list as a first descendant.
 Headings already have a top margin muted, but separating blocks of text in line with their hierarchy and .post__body setting an even margin between blocks. */
-p + p {
+* + p {
   margin-top: 1.4em;
 }
 
