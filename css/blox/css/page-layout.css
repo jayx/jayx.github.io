@@ -139,8 +139,12 @@
   margin-top: 0;
 }
 
-.post:not([class*="grid__item"]) + .post {
-  margin-top: 4rem;
+.post:not([class*="grid__item"]) {
+  padding-bottom: 4rem;
+}
+
+.post:not([class*="grid__item"]):last-child {
+  padding-bottom: 0;
 }
 
 .post__body + .post__body {
