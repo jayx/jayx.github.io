@@ -1,0 +1,88 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Jayx | Blog",
+  "home_page_url": "https://jayx.github.io/blog.html",
+  "feed_url": "https://jayx.github.io/feed.json",
+  "items": [
+    {
+      "id": "10",
+      "title": "sk8topia slide jam",
+      "url": "https://jayx.github.io/post-sk8topia-slide-jam.html",
+      "content_text": "Die Fokken Noormanne getting sideways at sk8opia … wikid sesh with video evidence to match. Thanks Troy Davies … you're a legend - viva la plank.",
+      "tags": [ "life" ],
+      "date_published": "2011-09-11T12:00:00"
+    },
+    {
+      "id": "9",
+      "title": "Nobody Reads This Anyway",
+      "url": "https://jayx.github.io/post-nobody-reads-this-anyway.html",
+      "content_text": "This is how I feel about my blog(s) at present - not enough time (or motivation) to blog lately. Some changes happening in my life that might just turn that around some … watch this space …",
+      "tags": [ "humour" ],
+      "date_published": "2011-04-11T12:00:00"
+    },
+    {
+      "id": "8",
+      "title": "Hammertime",
+      "url": "https://jayx.github.io/post-hammertime.html",
+      "content_text": "Thanks to friend Gerhard for sending this via email … it was just too damn good not to share.",
+      "tags": [ "humour" ],
+      "date_published": "2009-06-01T12:00:00"
+    },
+    {
+      "id": "7",
+      "title": "Tequila",
+      "url": "https://jayx.github.io/post-tequila.html",
+      "content_text": "Do you have feelings of inadequacy? Do you suffer from shyness? Do you sometimes wish you were more assertive?",
+      "tags": [ "humour" ],
+      "date_published": "2009-04-09T12:00:00"
+    },
+    {
+      "id": "6",
+      "title": "Dear Idiot",
+      "url": "https://jayx.github.io/post-dear-idiot.html",
+      "content_text": "Thank you for the SPAM. I am glad to hear that all is well and that you are finally living that dream of sitting on your fat ass, doing absolutely fuck-all and earning big bucks for it.",
+      "tags": [ "humour" ],
+      "date_published": "2008-09-01T12:00:00"
+    },
+    {
+      "id": "5",
+      "title": "When I (eventualy) grow up",
+      "url": "https://jayx.github.io/post-when-i-eventually-grow-up.html",
+      "content_text": "Someday when I go about growing up and become all conservation conscious - this be my ride of preference",
+      "tags": [ "life" ],
+      "date_published": "2011-09-11T12:00:00"
+    },
+    {
+      "id": "4",
+      "title": "Beware teh pr0n",
+      "url": "https://jayx.github.io/post-beware-teh-pr0n.html",
+      "content_text": "Beware",
+      "tags": [ "humour" ],
+      "date_published": "2008-06-10T12:00:00"
+    },
+    {
+      "id": "3",
+      "title": "BREAKING NEWS",
+      "url": "https://jayx.github.io/post-breaking-news.html",
+      "content_text": "An earthquake with the strength of 8.1 on the Richter scale hit Zimbabwe early this morning. Two million Zimbabweans are reported dead and over a million are injured. The country is totally ruined and the government doesn’t know where to start and is asking for help to rebuild. The rest of the world is in shock.",
+      "tags": [ "humour" ],
+      "date_published": "2008-05-11T12:00:00"
+    },
+    {
+      "id": "2",
+      "title": "welcome",
+      "url": "https://jayx.github.io/post-welcome.html",
+      "content_text": "The mad hatter's funeral has oficially moved to it's new home",
+      "tags": [ "life" ],
+      "date_published": "2007-12-27T12:00:00"
+    },
+    {
+      "id": "1",
+      "title": "The outsider",
+      "url": "https://jayx.github.io/post-the-outsider.html",
+      "content_text": "Every family has at least one. I am one such individual. It was a never-ending uphill battle to prove that being different does not have to be a bad thing",
+      "tags": [ "life" ],
+      "date_published": "2006-11-10T12:00:00"
+    },
+  ]
+}
