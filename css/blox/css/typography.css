@@ -55,6 +55,7 @@ Headings already have a top margin muted, but separating blocks of text in line 
 a,
 a * {
   color: inherit;
+  vertical-align: middle;
 }
 
 /* When a link opens in a new tab/window 

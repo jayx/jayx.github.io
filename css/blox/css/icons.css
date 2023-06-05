@@ -33,6 +33,21 @@
   width: 2rem;
 }
 
+.icon-categories {
+  mask-image: url(../img/icons/icon-categories.svg);
+  -webkit-mask-image: url(../img/icons/icon-categories.svg);
+}
+
+.icon-category-humour {
+  mask-image: url(../img/icons/icon-category-humour.svg);
+  -webkit-mask-image: url(../img/icons/icon-category-humour.svg);
+}
+
+.icon-category-life {
+  mask-image: url(../img/icons/icon-category-life.svg);
+  -webkit-mask-image: url(../img/icons/icon-category-life.svg);
+}
+
 .icon-eye-dropper {
   mask-image: url(../img/icons/icon-eye-dropper.svg);
   -webkit-mask-image: url(../img/icons/icon-eye-dropper.svg);
@@ -51,6 +66,11 @@
 .icon-new-tab {
   mask-image: url(../img/icons/icon-new-tab.svg);
   -webkit-mask-image: url(../img/icons/icon-new-tab.svg);
+}
+
+.icon-tag {
+  mask-image: url(../img/icons/icon-tag.svg);
+  -webkit-mask-image: url(../img/icons/icon-tag.svg);
 }
 
 .icon-light-dark {

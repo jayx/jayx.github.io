@@ -83,6 +83,7 @@
   --banner-img-text-color: var(--default-white);
   --scrollbar-color: var(--default-grey-light);
   --scrollbar-bg-color: var(--body-bg);
+  --category-icon-color: var(--default-passion);
   /* Github Gists */
   --gist-file-border-color: var(--border-color-default);
   --gist-data-canvas-color: var(--default-white);

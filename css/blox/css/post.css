@@ -92,7 +92,7 @@
 .post__meta {
   align-items: center;
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .post__category {
@@ -102,6 +102,83 @@
 
 .post__meta .post__tags {
   margin: 0;
+}
+
+.post__comment-count {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.post__comment-count a {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Conditional styles for .post */
+.post-list {
+  container-name: post-list;
+  container-type: inline-size;
+}
+
+@container post-list (width < 700px) {
+  .post:not([class*="grid__item"]) .post__tags .icon {
+    display: none;
+  }
+}
+
+@container post-list (width > 700px) {
+  .post:not([class*="grid__item"]):not(.not-tagged) {
+    display: grid;
+    gap: 0.75rem 3rem;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .post:not([class*="grid__item"]) .post__header {
+    margin-bottom: 0;
+  }
+
+  .post:not([class*="grid__item"]) .post__meta {
+    align-items: end;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    grid-row: auto / span 2;
+    gap: 0.25em;
+    max-width: 32ch;
+  }
+
+  .post:not([class*="grid__item"]) .post__category {
+    align-self: end;
+  }
+
+  .post:not([class*="grid__item"]) .post__tags {
+    gap: 0;
+    justify-content: end;
+  }
+
+  .post:not([class*="grid__item"]) .icon {
+    background-color: var(--category-icon-color);
+    color: transparent;
+  }
+
+  .post:not([class*="grid__item"]) .tag {
+    background: unset;
+    padding-inline: 0.25em 0;
+  }
+
+  .post:not([class*="grid__item"]) .tag:not(:last-child):after {
+    content: ",";
+  }
+
+  .post:not([class*="grid__item"]) .tag__label {
+    font-size: 0.9em;
+  }
+
+  .post:not([class*="grid__item"]) .post__synopsis {
+    margin-top: 0;
+    padding-inline-start: 60px;
+  }
 }
 
 /* In-page navigation */
