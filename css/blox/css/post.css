@@ -42,6 +42,7 @@
 }
 
 .post__heading {
+  line-height: 1;
   margin: 0;
 }
 
@@ -113,6 +114,11 @@
   font-style: italic;
   font-weight: bold;
   text-decoration: none;
+}
+
+/* Post body */
+.post__body {
+  padding-block-start: 3rem;
 }
 
 /* Conditional styles for .post */

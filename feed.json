@@ -5,6 +5,14 @@
   "feed_url": "https://jayx.github.io/feed.json",
   "items": [
     {
+      "id": "11",
+      "title": "Contemplating",
+      "url": "https://jayx.github.io/post-contemplating.html",
+      "content_text": "This is where I'm at in my life right now; lots going on, lots to get off my chest.",
+      "tags": [ "life" ],
+      "date_published": "2023-06-05T18:00:00"
+    },
+    {
       "id": "10",
       "title": "sk8topia slide jam",
       "url": "https://jayx.github.io/post-sk8topia-slide-jam.html",
