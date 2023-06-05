@@ -52,6 +52,16 @@ $(document).ready(function(){
     return false;
   });
 
+  // Get and display tag count
+  if ($('[data-tag-filter]').length) {
+    $('[data-tag-filter]').each( function() {
+      var tagName = $(this).data('tag-filter');
+      var postTag = $('.tag__label[data-tag="'+ tagName +'"]');
+      var tagPostCount = postTag.length;
+      $(this).after(' <span class="count">'+ tagPostCount +'</span>')
+    });
+  };
+
 });
 
 // Check overflow for gallery component
