@@ -52,6 +52,10 @@
   text-decoration: none;
 }
 
+.tag__label[data-tag-filter]:hover {
+  cursor: pointer;
+}
+
 /* Post count */
 .count {
   background-color: var(--bg-contrast-heavy);
