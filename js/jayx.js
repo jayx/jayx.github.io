@@ -6,10 +6,9 @@
 // });
 
 // Adjust header
-var headerHeight = $('header').height() / 2;
+var headerHeight = $('header').height() * 2;
 $(document).scroll(function(e){
   var fromTop = $(window).scrollTop();
-  // console.log(fromTop);
   if (fromTop > headerHeight) {
     $('html').addClass('zoom--out');
   } else {
