@@ -72,6 +72,10 @@
 }
 
 /* TODO move this after experiment */
+.nav--in-page {
+  min-height: 100%;
+}
+
 .nav--in-page > ul {
   position: sticky;
   top: 4rem;
