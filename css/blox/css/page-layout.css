@@ -3,7 +3,7 @@
   background-color: var(--header-bg);
   box-shadow: 0 0 0.5rem var(--shadow-color);
   display: grid;
-  height: var(--page-header-height);
+  height: var(--page-header-scroll);
   padding-block: 0.5rem;
   place-items: center;
   position: sticky;
@@ -18,7 +18,7 @@
 
 @media (min-width: 48rem) {
   .zoom--out #page-header {
-    height: var(--page-header-scroll);
+    height: var(--page-header-height);
   }
   
   #page-header nav > ul {
@@ -38,8 +38,8 @@
 .logo {
   align-items: center;
   display: inline-flex;
-  gap: 0;
-  height: 24px;
+  gap: 0.5rem;
+  height: 36px;
   transition:
     height 250ms,
     gap 250ms;
@@ -50,19 +50,19 @@
 }
 
 .logo__title {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 900;
   transition: font-size 250ms;
 }
 
 @media (min-width: 48rem) {
   .zoom--out .logo {
-    gap: 0.5rem;
-    height: 36px;
+    gap: 0;
+    height: 24px;
   }
 
   .zoom--out .logo__title {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
