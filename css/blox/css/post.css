@@ -188,6 +188,10 @@
 }
 
 /* In-page navigation */
+.nav--in-page {
+  min-height: 100%;
+}
+
 .nav--in-page ul {
   position: sticky;
   top: var(--page-header-scroll);
