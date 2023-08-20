@@ -14,7 +14,3 @@
 .gist.gist .blob-code {
   --color-fg-default: var(--gist-color-fg-default);
 }
-
-.gist.gist .blob-code::selection {
-  background-color: red;
-}
