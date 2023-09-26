@@ -92,7 +92,8 @@
 }
 
 .slideshow__pagination a {
-  display: inline-block;
+  display: block;
+  height: 100%;
   text-decoration: none;
 }
 
