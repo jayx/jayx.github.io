@@ -33,8 +33,17 @@
 }
 
 /* Slideshow */
+.slideshow {
+  background-color: var(--slideshow-background);
+  border: 1px solid var(--slideshow-border);
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 3px var(--slideshow-border);
+  padding: 1em;
+}
+
 .slideshow__reel {
   aspect-ratio: 2 / 1;
+  background-color: var(--body-bg);
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
@@ -55,6 +64,10 @@
   max-width: 100%;
 }
 
+.slideshow__pagination {
+  margin-top: 1em;
+}
+
 .slideshow__pagination ul {
   display: flex;
   justify-content: center;
@@ -63,17 +76,23 @@
 }
 
 .slideshow__pagination ul li {
-  flex-basis: 0;
-  flex-grow: 1;
+  aspect-ratio: 1;
+  border: 3px solid var(--slideshow-background);
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px var(--slideshow-border);
   margin: 0;
+  overflow: hidden;
   padding: 0;
   text-align: center;
+  width: 4em;
+}
+
+.slideshow__pagination ul li + li {
+  margin-left: -1em;
 }
 
 .slideshow__pagination a {
-  aspect-ratio: 1;
   display: inline-block;
-  overflow: hidden;
   text-decoration: none;
 }
 
@@ -83,9 +102,8 @@
 }
 
 .slide__caption {
-  color: white;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--body-bg);
   bottom: 0;
   display: flex;
   justify-content: space-between;
@@ -100,6 +118,38 @@
 .slideshow__slide:hover .slide__caption,
 .slideshow__slide:focus .slide__caption {
   transform: translateY(0);
+}
+
+.slide__caption .back,
+.slide__caption .forward {
+  display: inline-flex;
+  font-weight: 600;
+  gap: 1em;
+  text-decoration: none;
+}
+
+.slide__caption .back::before,
+.slide__caption .forward::after {
+  background-color: var(--text-color);
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.slide__caption .back::before {
+  mask-image: url(../img/icons/angle-left.svg);
+  -webkit-mask-image: url(../img/icons/angle-left.svg);
+}
+
+.slide__caption .forward::after {
+  mask-image: url(../img/icons/angle-right.svg);
+  -webkit-mask-image: url(../img/icons/angle-right.svg);
 }
 
 .slide__synopsis {
