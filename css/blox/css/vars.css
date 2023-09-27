@@ -108,6 +108,9 @@
   --page-header-height: var(--default-size-12-xl);
   --page-header-scroll: calc(var(--page-header-height) * 1.4);
   --page-content-scroll: calc(var(--page-header-scroll) * 2);
+  /* Slideshow */
+  --slideshow-background: var(--default-white);
+  --slideshow-border: var(--default-grey-lighter);
   /* Disqus variables */
   --publisher-color: var(--text-color);
 }
@@ -124,6 +127,10 @@
   --border-color-default: var(--default-grey-darker);
   --banner-bg: var(--default-black);
   --scrollbar-color: var(--default-grey-darker);
+  /* Components */
+  /* Slideshow */
+  --slideshow-background: var(--default-black);
+  --slideshow-border: var(--default-grey-darkest);
   /* Disqus variables */
   --publisher-color: var(--text-color);
   /* Github Gists */
